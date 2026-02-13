@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matic Notebook | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- KaTeX for Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+        integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">
+                <div class="logo">
+                    <i data-lucide="zap"></i>
+                </div>
+                <h1>Matic</h1>
+                <button id="sidebar-toggle" class="icon-btn-ghost" style="margin-left: auto;">
+                    <i data-lucide="panel-left"></i>
+                </button>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" id="dashboard-nav-btn">
+                    <i data-lucide="layout-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+                <div class="nav-group">
+                    <a href="#" class="nav-item" id="notes-module-btn">
+                        <i data-lucide="book-open"></i>
+                        <span>Notes</span>
+                        <i data-lucide="chevron-down" class="chevron"></i>
+                    </a>
+                    <div class="nav-sub-menu" id="notes-sub-menu">
+                        <a href="#" class="sub-item">Math</a>
+                        <a href="#" class="sub-item">Engineering Sciences and Applied Subjects</a>
+                        <a href="#" class="sub-item">Professional Electrical Engineering</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-item" id="question-bank-nav-btn">
+                    <i data-lucide="brain-circuit"></i>
+                    <span>Question Bank</span>
+                </a>
+                <!-- Schedule Module Removed -->
+                <a href="#" class="nav-item" id="settings-nav-btn">
+                    <i data-lucide="settings"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div style="padding: 12px 0; text-align: center; color: var(--text-secondary);">
+                    <div class="user-info">
+                        <p style="font-size: 0.75rem; margin-bottom: 2px;">Created by</p>
+                        <p style="font-weight: 600; color: var(--text-primary);">John Ross Pollentes</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-container">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Search notes, questions, topics...">
+                </div>
+                <div class="top-actions">
+                    <button class="icon-btn">
+                        <i data-lucide="bell"></i>
+                        <span class="badge">3</span>
+                    </button>
+                    <button class="primary-btn">
+                        <i data-lucide="plus"></i>
+                        New Note
+                    </button>
+                </div>
+            </header>
+
+            <div class="content-scroll">
+                <div id="dashboard-view" class="view-section active">
+                    <div class="dashboard-grid">
+                        <!-- Welcome Section -->
+                        <section class="welcome-section">
+                            <h2>Welcome back, <span class="highlight">Student</span>!</h2>
+                            <p class="subtitle">Ready to continue your learning journey today?</p>
+
+                            <div class="stats-row">
+                                <div class="stat-card">
+                                    <div class="icon-box purple">
+                                        <i data-lucide="book"></i>
+                                    </div>
+                                    <div class="stat-info">
+                                        <span class="value">124</span>
+                                        <span class="label">Total Notes</span>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="icon-box blue">
+                                        <i data-lucide="check-circle-2"></i>
+                                    </div>
+                                    <div class="stat-info">
+                                        <span class="value">85%</span>
+                                        <span class="label">Completion Rate</span>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="icon-box orange">
+                                        <i data-lucide="flame"></i>
+                                    </div>
+                                    <div class="stat-info">
+                                        <span class="value">12</span>
+                                        <span class="label">Day Streak</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Recent Notes -->
+                        <section class="recent-section">
+                            <div class="section-header">
+                                <h3><i data-lucide="clock"></i> Recent Notes</h3>
+                                <a href="#" class="view-all">View All</a>
+                            </div>
+                            <div class="notes-grid" id="recent-notes-grid">
+                                <!-- Populated by JS -->
+                            </div>
+                        </section>
+
+                        <!-- Categories / Quick Access -->
+                        <section class="categories-section">
+                            <div class="section-header">
+                                <h3><i data-lucide="folder-open"></i> Subjects</h3>
+                            </div>
+                            <div class="categories-list">
+                                <div class="category-card" style="--accent: #ec4899">
+                                    <i data-lucide="calculator"></i>
+                                    <h4>Mathematics</h4>
+                                    <span>19 Files</span>
+                                </div>
+                                <div class="category-card" style="--accent: #8b5cf6">
+                                    <i data-lucide="zap"></i>
+                                    <h4>Electrical Eng.</h4>
+                                    <span>23 Files</span>
+                                </div>
+                                <div class="category-card" style="--accent: #10b981">
+                                    <i data-lucide="flask-conical"></i>
+                                    <h4>Engineering Sci.</h4>
+                                    <span>10 Files</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Notes Sub-Category View (Generic Placeholder) -->
+                <!-- Notes Sub-Category View -->
+                <div id="notes-view" class="view-section" style="display: none;">
+                    <section class="welcome-section">
+                        <div class="section-header"
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                            <div>
+                                <h2 id="notes-view-title" style="margin-bottom: 8px;">Notes Category</h2>
+                                <p class="subtitle" style="margin: 0;">Browse and manage topics for this subject.</p>
+                            </div>
+                            <button id="add-topic-btn" class="primary-btn">
+                                <i data-lucide="plus"></i>
+                                Add Topic
+                            </button>
+                        </div>
+
+                        <div id="topics-grid" class="dashboard-grid"
+                            style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px;">
+                            <!-- Topics will be added here via JS -->
+                            <div class="empty-state"
+                                style="grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 200px;">
+                                <i data-lucide="folder-plus"
+                                    style="opacity: 0.5; width: 48px; height: 48px; margin-bottom: 16px;"></i>
+                                <p>No topics yet. Click "Add Topic" to create one.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Question Bank View -->
+                <div id="question-bank-view" class="view-section" style="display: none;">
+                    <section class="welcome-section">
+                        <h2>Question Bank</h2>
+                        <p class="subtitle">Practice with thousands of engineering questions.</p>
+                        <div
+                            style="background: var(--bg-secondary); padding: 40px; border-radius: 16px; border: 1px solid var(--bg-accent); text-align: center; color: var(--text-muted);">
+                            <i data-lucide="brain-circuit"
+                                style="width: 48px; height: 48px; margin-bottom: 16px; opacity: 0.5;"></i>
+                            <h3>Question Database</h3>
+                            <p>Question bank interface coming soon...</p>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Settings View -->
+                <div id="settings-view" class="view-section" style="display: none;">
+                    <div class="dashboard-grid">
+                        <section class="welcome-section">
+                            <h2>Settings</h2>
+                            <p class="subtitle">Manage your account and preferences.</p>
+
+                            <div class="settings-container"
+                                style="background: var(--bg-secondary); padding: 40px; border-radius: 16px; border: 1px solid var(--bg-accent);">
+                                <div style="text-align: center; color: var(--text-muted); padding: 60px 0;">
+                                    <i data-lucide="settings"
+                                        style="width: 48px; height: 48px; margin-bottom: 16px; opacity: 0.5;"></i>
+                                    <h3>Settings Page</h3>
+                                    <p>Content coming soon...</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- New Note Modal -->
+    <div id="new-note-modal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Create New Note</h3>
+                <button class="icon-btn-ghost close-modal">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p style="text-align: center; color: var(--text-muted); padding: 40px;">
+                    Editor features coming soon...
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="secondary-btn close-modal">Cancel</button>
+                <button class="primary-btn">Create Note</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Topic Modal -->
+    <div id="new-topic-modal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Add New Topic</h3>
+                <button class="icon-btn-ghost close-modal">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label style="font-weight: 500; font-size: 0.9rem; color: var(--text-secondary);">Topic Name</label>
+                    <input type="text" id="topic-name-input" placeholder="e.g., Calculus I, Circuit Theory..."
+                        style="width: 100%; padding: 12px; background: var(--bg-primary); border: 1px solid var(--bg-accent); border-radius: 8px; color: var(--text-primary); outline: none;">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="secondary-btn close-modal">Cancel</button>
+                <button id="save-topic-btn" class="primary-btn">Create Topic</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script>
+        // Error Handler for Non-Programmers
+        window.onerror = function (message, source, lineno, colno, error) {
+            console.error("--- ERROR DETECTED ---");
+            console.error("Message: " + message);
+            console.error("Source: " + source);
+            console.error("Line: " + lineno);
+            console.error("Column: " + colno);
+            console.error("Error Object: ", error);
+            // alert("An error occurred: " + message + "\nCheck console (F12) for details.");
+            return false;
+        };
+
+        window.addEventListener('unhandledrejection', function (event) {
+            console.error("--- UNHANDLED PROMISE REJECTION ---");
+            console.error("Reason: ", event.reason);
+        });
+    </script>
+</body>
+
+</html>
