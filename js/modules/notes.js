@@ -258,17 +258,24 @@ async function loadLessonContent(category, fileName, container) {
 
         if (url) {
             console.log(`Found path in registry: ${url}`);
-            res = await fetch(url);
+            // Encode the URL to handle spaces in folder names/filenames
+            // We use encodeURI to preserve slashes but encode spaces
+            res = await fetch(encodeURI(url));
         } else {
+            console.log(`File ${fileName} not found in registry, trying fallbacks...`);
             // 2. Fallback to folder guessing if registry lookup fails
             const folder = getCategoryFolder(category);
-            url = `lesson/${folder}/${encodeURIComponent(fileName)}`;
+            // Ensure folder name is encoded (e.g., "Professional Lessons" -> "Professional%20Lessons")
+            url = `lesson/${encodeURIComponent(folder)}/${encodeURIComponent(fileName)}`;
+            console.log(`Trying fallback URL: ${url}`);
             res = await fetch(url);
         }
 
         if (!res.ok) {
+            console.warn(`Initial fetch failed for ${url} (Status: ${res.status})`);
+
             // 3. Fallback: Try root lesson folder
-            console.warn(`Lesson not found at ${url}, checking root 'lesson/'...`);
+            console.log(`Checking root 'lesson/'...`);
             url = `lesson/${encodeURIComponent(fileName)}`;
             res = await fetch(url);
         }
@@ -280,17 +287,22 @@ async function loadLessonContent(category, fileName, container) {
 
             for (const otherFolder of otherFolders) {
                 if (otherFolder === currentFolder) continue;
-                const otherUrl = `lesson/${otherFolder}/${encodeURIComponent(fileName)}`;
-                const otherRes = await fetch(otherUrl);
-                if (otherRes.ok) {
+                const otherUrl = `lesson/${encodeURIComponent(otherFolder)}/${encodeURIComponent(fileName)}`;
+                res = await fetch(otherUrl);
+                if (res.ok) {
                     console.log(`Lesson found in ${otherFolder}`);
-                    res = otherRes;
+                    url = otherUrl; // Update URL for logging if needed
                     break;
+                } else {
+                    console.log(`Failed to find in ${otherFolder}: ${otherUrl}`);
                 }
             }
         }
 
-        if (!res || !res.ok) throw new Error("File not found");
+        if (!res || !res.ok) {
+            console.error(`All attempts to load ${fileName} failed.`);
+            throw new Error(`File not found: ${fileName}`);
+        }
 
         let text = await res.text();
 
