@@ -1,0 +1,207 @@
+# CALCULATOR TECHNIQUE TRAINING
+
+**PEB Training & Review**
+**Electrical Engineers’ Licensure Examination**
+**REVIEW APRIL 2026**
+
+---
+
+## CANON f789 SGA
+
+| Operation | Mode | Description | LCD Indicator |
+| :--- | :--- | :--- | :--- |
+| [MODE] [1] | COMP | Normal calculations | |
+| [MODE] [2] | CPLX | Complex number calculation | CPLX |
+| [MODE] [3] | STAT | Statistical and regression calculations | STAT |
+| [MODE] [4] | BASE | Calculations involving specific number systems | |
+| [MODE] [5] | EQN | Equation solution | EQN |
+| [MODE] [6] | TABLE | Function table generation | |
+| [MODE] [7] | MATX | Matrix calculations | MATX |
+| [MODE] [8] | VCTR | Vector calculations | VCTR |
+
+*   **Initial mode is COMP mode.**
+
+---
+
+## CASIO 570ES PLUS / OLYMPIA 570ES
+
+### fx-570MS and fx-991MS Modes
+
+| To perform this type of calculation: | Perform this key operation: | To enter this mode: |
+| :--- | :--- | :--- |
+| Basic arithmetic calculations | [MODE] [1] | COMP |
+| Complex number calculations | [MODE] [2] | CMPLX |
+| Standard deviation | [MODE] [MODE] [1] | SD |
+| Regression calculations | [MODE] [MODE] [2] | REG |
+| Base-n calculations | [MODE] [MODE] [3] | BASE |
+| Solution of equations | [MODE] [MODE] [MODE] [1] | EQN |
+| Matrix calculations | [MODE] [MODE] [MODE] [2] | MAT |
+| Vector calculations | [MODE] [MODE] [MODE] [3] | VCT |
+
+---
+
+## Modes
+
+1. Ordinary Computations
+2. Complex Numbers
+3. Statistics
+4. Base-N Integer Arithmetic
+5. Algebraic Equations
+6. Matrix Manipulations
+7. Tabulate a Function
+8. Vector Algebra
+
+---
+
+## Mode 1: COMP
+
+*   Fractions
+*   Square Root and Cube Root
+*   Square and Cube Function
+*   Exponential Function
+*   Radical Function
+*   Negative Sign and Absolute Value
+*   Angles
+*   Trigonometric and Inverse Trigonometric Functions
+*   Hyperbolic Functions
+*   Memory and Store Functions
+*   Engineering Notation
+*   S-D Transformations
+*   CALC Function
+*   SOLVE Function
+*   Definite Integral
+*   Differential Calculations
+*   Reciprocal
+*   Factorial
+*   Logarithm and Bases
+*   Summation
+
+---
+
+## Mode 2: CMPLX
+
+*   Operations on Complex Numbers
+*   Shift-2 Functions
+    *   Complex Argument
+    *   Conjugate
+    *   Polar and Rectangular Coordinates Conversion
+
+---
+
+## CMPLX MODE
+
+$$i^2 = -1$$
+
+**Define Complex number:**
+$z = x + yi$
+$Re \, z = x$
+$Im \, z = y$
+
+**Argand diagram**
+
+---
+
+## Polar and Rectangular Forms
+
+Rectangular form: $z = x + yi$
+Polar form: $z = r(\cos \theta + i \sin \theta)$
+Euler Form: $z = re^{i\theta}$
+
+**Relationships:**
+*   $x = r \cos \theta$
+*   $y = r \sin \theta$
+*   $r = \sqrt{x^2 + y^2}$
+
+*Girolamo Cardano*
+
+---
+
+## POWERS AND ROOTS
+
+**De Moivre’s:**
+$$z^n = r^n (\cos n\theta + i \sin n\theta)$$
+$$(\cos \theta + i \sin \theta)^n = \cos n\theta + i \sin n\theta$$
+
+**Roots:**
+$$\sqrt[n]{z} = \sqrt[n]{r} \left( \cos \frac{\theta + 2k\pi}{n} + i \sin \frac{\theta + 2k\pi}{n} \right)$$
+$k = 0, 1, \dots, (n - 1)$
+
+---
+
+## Mode 3: STAT
+
+*   Single-set Data Analysis
+*   Frequency
+*   2-set Data Analysis
+*   Linear model and data fit
+*   Normal Distribution
+*   t-value
+*   Other mathematical models
+
+---
+
+## Mode 4: BASE-N
+
+*   Number Systems
+*   Operations
+*   Conversions
+*   Boolean Algebra
+
+---
+
+## Mode 5: EQN
+
+*   Systems of Equations in 2 Unknowns
+*   Systems of Equations in 3 Unknowns
+*   Quadratic Equation
+*   Cubic Equation
+
+---
+
+## Mode 6: MATRIX
+
+*   Storing Data
+*   Matrix Operations
+*   Determinant
+*   Transpose
+*   Inverse
+
+---
+
+## Mode: VECTOR
+
+**Dot Product — scalar product.**
+$\mathbf{A} \cdot \mathbf{B} = a_x b_x + a_y b_y + a_z b_z$
+$\mathbf{A} \cdot \mathbf{B} = |\mathbf{A}| |\mathbf{B}| \cos \theta$
+
+**Dot Product Rules:**
+*   $\mathbf{i} \cdot \mathbf{i} = \mathbf{j} \cdot \mathbf{j} = \mathbf{k} \cdot \mathbf{k} = 1$
+*   $\mathbf{i} \cdot \mathbf{j} = \mathbf{j} \cdot \mathbf{k} = \mathbf{k} \cdot \mathbf{i} = 0$
+*   $\mathbf{A} \cdot \mathbf{B} = \mathbf{B} \cdot \mathbf{A}$
+*   $\mathbf{A} \cdot (\mathbf{B} + \mathbf{C}) = \mathbf{A} \cdot \mathbf{B} + \mathbf{A} \cdot \mathbf{C}$
+*   $m(\mathbf{A} \cdot \mathbf{B}) = (m\mathbf{A}) \cdot \mathbf{B}$
+
+---
+
+## Mode: VECTOR
+
+**Cross Product — vector product**
+$$\mathbf{A} \times \mathbf{B} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ a_x & a_y & a_z \\ b_x & b_y & b_z \end{vmatrix}$$
+
+Magnitude: $|\mathbf{A} \times \mathbf{B}| = |\mathbf{A}| |\mathbf{B}| \sin \theta$
+
+**Cross Product Rules:**
+*   $\mathbf{i} \times \mathbf{i} = \mathbf{j} \times \mathbf{j} = \mathbf{k} \times \mathbf{k} = 0$
+*   $\mathbf{i} \times \mathbf{j} = \mathbf{k}, \mathbf{j} \times \mathbf{k} = \mathbf{i}, \mathbf{k} \times \mathbf{i} = \mathbf{j}$
+*   $\mathbf{A} \times \mathbf{B} = -(\mathbf{B} \times \mathbf{A})$
+*   $\mathbf{A} \times (\mathbf{B} + \mathbf{C}) = \mathbf{A} \times \mathbf{B} + \mathbf{A} \times \mathbf{C}$
+*   $m(\mathbf{A} \times \mathbf{B}) = (m\mathbf{A}) \times \mathbf{B}$
+
+---
+
+## Mode: VECTOR
+
+*   Storing Data
+*   Vector Addition and Subtraction
+*   Dot Product
+*   Cross Product

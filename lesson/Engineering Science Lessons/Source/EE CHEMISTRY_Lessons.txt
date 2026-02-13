@@ -1,0 +1,152 @@
+# CHEMISTRY
+## PEB TRAINING AND REVIEW
+
+---
+
+# STOICHIOMETRY
+
+## Molar Mass and the Mole
+**Molar Mass** - mass in grams of compound per unit mole of the substance.
+
+$$MW = \frac{g \text{ of substance A}}{mol \text{ of substance A}} = \frac{amu \text{ of A}}{particle \text{ of A}}$$
+
+*   $1 \text{ mol} = 6.02 \times 10^{23} \text{ atoms, ions, molecules}$
+*   $6.02 \times 10^{23} \text{ amu} = 1 \text{ gram}$
+
+---
+
+# ATOMIC THEORY & ELECTRONS
+
+## The discovery of the Electrons and Nucleons
+
+| Proponent | Model | Experiment | Constant |
+| :--- | :--- | :--- | :--- |
+| **Joseph John Thomson** | Cathode Ray Tube | - | $e/m = 1.75 \times 10^{11} \text{ C/kg}$ |
+| **Robert Millikan** | Oil Drop Experiment | - | $e = -1.60 \times 10^{-19} \text{ C}$<br>$m_e = 9.11 \times 10^{-31} \text{ kg}$ |
+| **Ernst Rutherford** | Gold foil Bombardment | - | $p = +1.60 \times 10^{-19} \text{ C}$<br>$m_p = 1.67 \times 10^{-27} \text{ kg}$ |
+| **James Chadwick** | Beryllium foil Bombardment | - | $n = 0 \text{ C}$<br>$m_n = 1.67 \times 10^{-27} \text{ kg}$ |
+
+---
+
+## SPECTRA
+Atoms produce **line spectra** but molecules produce **band spectra** which have continuous bands which are made up of very closely spaced lines.
+
+$$E = 2.18 \times 10^{-18} Z^2 \left| \frac{1}{n_1^2} - \frac{1}{n_2^2} \right| = \frac{hc_o}{\lambda}$$
+
+*   $n1 \rightarrow n2$: Absorption
+*   $n2 \rightarrow n1$: Emission
+*   Where $Z$ = atomic no.
+
+---
+
+## Quanta
+$$E = hf$$
+*   where $h$ = Planck’s constant $= 6.626 \times 10^{-34} \text{ J-s}$
+*   $f$ = frequency of radiation
+
+---
+
+## Heisenberg’s Uncertainty Principle (1926)
+$$(\Delta x)(\Delta p) \geq \frac{h}{4\pi}$$
+> “It is impossible to know exactly both the position and momentum of an electron or any other small particle simultaneously and accurately.”
+
+---
+
+## Light as Wave: Schrodinger Equation
+$$\nabla^2 \Psi + \frac{8\pi^2 m}{h^2}(E - V)\Psi = 0$$
+*   where $E$ = total energy
+*   $V$ = potential energy
+*   $\Psi$ = wave function
+*   $\nabla$ is a Laplacian operator
+
+---
+
+## Angular and Radial Distributions
+The region in space around the nucleus where it is most probable to find an electron is called the **atomic orbital**, which are of different kind, and each orbital has a definite energy.
+
+---
+
+## Quantum Numbers
+
+| QUANTUM NUMBER | Value | Interpretations |
+| :--- | :--- | :--- |
+| **Principal, n** | $n = 1, 2, 3, 4, \dots, 7$ | Bohr energy levels |
+| **Azimuthal, l** | $l = 0, 1, \dots, (n-1)$ | $0 = s$ orbital, $1 = p$ orbital, $2 = d$ orbital, $3 = f$ orbital |
+| **Magnetic, ml** | $ml = -l \dots 0 \dots +l$ | orientation orbitals in space |
+| **Spin, ms** | $ms = +1/2, -1/2$ | Spin |
+
+**Total electrons in the nth shell** $= 2n^2$
+
+---
+
+# GASES
+
+## Gas Laws
+*   **Ideal Gas Equation:** $PV = nRT$
+*   **Boyle's Law:** $P_1V_1 = P_2V_2$
+*   **Charles' Law:** $\frac{V_1}{T_1} = \frac{V_2}{T_2}$
+*   **Combined gas equation:** $\frac{P_1V_1}{T_1} = \frac{P_2V_2}{T_2}$
+
+### Units and R Values
+| Units | Numerical Value |
+| :--- | :--- |
+| L-atm/mol-K | 0.08206 |
+| cal/mol-K | 1.987 |
+| J/mol-K | 8.314 |
+| $m^3$-Pa/mol-K | 8.314 |
+| L-torr/mol-K | 62.36 |
+
+---
+
+## Graham’s Law of Diffusion
+$$\frac{\mu_A}{\mu_B} = \sqrt{\frac{(MW)_B}{(MW)_A}}$$
+
+**Recall:** $\rho = \frac{P(MW)}{RT} \rightarrow \frac{\mu_a}{\mu_B} = \sqrt{\frac{\rho_B}{\rho_A}}$
+
+---
+
+# SOLUTIONS
+
+## Components:
+*   **Solute** - the component being dissolved
+*   **Solvent** - usually, but not strictly, the component in greater amount
+
+**Note:**
+*   State of solution is based on the state of the solvent
+*   True solution remains homogeneous with time
+*   A solution of solid or liquid in a gas is **not** a true solution
+*   A mixture of gases **is** a true solution
+
+## Solution Types:
+*   **Saturated** - contains as much solute as will dissolve at a given temperature in the presence of undissolved solute
+*   **Unsaturated** - contains less solute than the saturated solution
+*   **Supersaturated** - contains more solute than the saturated solution (a metastable state).
+
+---
+
+## Pressure: Henry’s Law
+Effect is significant only on gases.
+> “The amount of gas dissolved by a given volume of liquid solvent at constant temperature is proportional to the pressure of the gas in equilibrium with the solution.”
+
+$$C = k_H P$$
+
+---
+
+## UNITS OF CONCENTRATION
+*   **Molarity:** $M = \frac{\text{mols solute}}{\text{L of solution}}$
+*   **Molality:** $m = \frac{\text{mols solute}}{\text{kg of solvent}}$
+*   **Mole Fraction:** $x = \frac{\text{mols solute}}{\text{mols solute} + \text{mols solvent}}$
+*   **parts per million:** $ppm = \frac{\text{g of solute}}{\text{g of solution}} \times 10^6$
+*   **parts per billion:** $ppb = \frac{\text{g of solute}}{\text{g of solution}} \times 10^9$
+*   **% by mass:** $\%m/m = \frac{\text{g of solute}}{\text{g of solution}} \times 100$
+
+---
+
+# ACIDS AND BASES
+
+**For strong Acid and Bases at 25°C:**
+*   $pH = -\log(H^+)$
+*   $pOH = -\log(OH^-)$
+*   $pH + pOH = 14$
+*   $H^+ = \frac{\text{mols } H^+}{\text{L of sol'n}}$
+*   $OH^- = \frac{\text{mols } OH^-}{\text{L of sol'n}}$

@@ -1,0 +1,118 @@
+# AC MACHINERY
+**ELECTRICAL ENGINEERS**  
+**FEBRUARY 2026**
+
+---
+
+## INDUCTION MOTORS
+
+### INDUCTION MOTORS: CONSTRUCTION
+Due to the source current from the source, a revolving magnetic field (RMF) is induced by the stator which induces current in the rotor and produces a field along the rotor conductors.
+
+### INDUCTION MOTORS: TORQUE
+* The rotor will always rotate less than the stator RPM in order to produce TORQUE on the rotor conductors (SLIP).
+* No slip, no EMF, no current, no torque.
+
+#### SLIP
+Speed of rotor < synchronous speed
+
+*   $\%S = \frac{N_s - N}{N_s}$
+*   Slip Speed $= N_s - N$
+
+### INDUCTION MOTORS: SLIP & ROTOR CURRENT
+**SLIP:** $S = \frac{N_s - N}{N_s}$
+
+**FREQUENCY OF ROTOR CURRENTS:**
+*   $f_r = \frac{(N_s - N) \times p}{120} = S \times f$
+*   Slip Speed $= N_s - N$
+
+**ROTOR EMF:**
+*   Rotor-induced emf $= E$
+*   $E = 4.44 k_c k_d N B A f_r$
+*   $E = 4.44 k_c k_d N B A (f S)$
+
+**Rotor Current:**
+*   $X_2 = S X_{2s}$
+*   $X_{2s}$ is stand-still reactance. At stand still, EMF is maximum hence the rotor field.
+
+### INDUCTION MOTORS: ROTOR CIRCUIT
+**ROTOR IMPEDANCE:**
+*   $\bar{Z_2} = R_2 + j X_{2s} S$
+*   $Z_2 = \sqrt{R_2^2 + (X_{2s} S)^2}$
+
+**Induced emf:** $E_2 = S E_{2s}$
+
+**Rotor Current:** $I_2 = \frac{E_2}{Z_2} = \frac{S E_{2s}}{\sqrt{R_2^2 + (X S)^2}}$
+
+**Rotor pf:**
+*   $pf = \cos \phi = \frac{R_2}{Z_2} = \frac{R_2}{\sqrt{R_2^2 + (X_{2s} S)^2}}$
+*   $pf = \cos \phi = \frac{R_2}{Z_2} = \frac{R_2 / S}{\sqrt{(R_2 / S)^2 + X_2^2}}$
+
+**Note:**
+*   $X_{2L} = 2 \pi f_r L_2 = 2 \pi (f S) L_2$
+*   At stand still, $S = 1$
+*   At any $N$, $X_{2L} = S X_{2s}$
+*   $R_2 (\frac{1-S}{S}) =$ rotor electrical load
+
+### POWER FLOW DIAGRAM
+1.  **Input power (Elect.)**
+2.  $\rightarrow$ Stator copper loss / Stator iron loss
+3.  $\rightarrow$ **Stator output = Rotor input**
+4.  $\rightarrow$ Rotor copper loss
+5.  $\rightarrow$ **Mech. power developed in rotor**
+6.  $\rightarrow$ Mech. losses (friction/windage)
+7.  $\rightarrow$ **Rotor output at shaft (Mech.)**
+
+**Equations:**
+*   Total Rotor Power: $P_2 = \frac{1}{S} I_2^2 R_2$
+*   Rotor Copper Loss: $P_{Cu,2} = I_2^2 R_2$
+*   Rotor Mechanical Power: $P'_2 = (\frac{1-S}{S}) I_2^2 R_2$
+*   Rotor Efficiency: $\eta_R = 1 - S$
+
+**Motor Efficiency:**
+*   $\eta_M = \frac{P'_2}{P_1} \times 100$
+*   $P'_1 = P_1 + P_{Cu,1} + P_{i,1}$
+*   $P_1 = P_2$
+*   $P_2 = P_{Cu,2} + P'_2$
+*   $P'_2 = P_{windage} + P_{friction}$
+
+### I.M. TORQUE
+$T_{FL} = \frac{3(60)}{2 \pi N_s} \times \frac{S E_2^2 R_2}{R_2^2 + (S X_2)^2}$
+
+**Ratios:**
+*   $\frac{T_{FL}}{T_{max}} = \frac{2aS}{a^2 + S^2}$
+*   $\frac{T_S}{T_{max}} = \frac{2a}{a^2 + 1}$
+*   At $T_{max}, S = a$
+*   $a = \frac{R_2}{X_2}$
+
+---
+
+## SYNCHRONOUS MOTOR
+
+*   A synchronous machine can be operated as a generator or as a motor.
+*   The torque produced in a 3-phase synchronous motor is not unidirectional and as such this motor is **not self-starting.**
+
+### CALCULATIONS: SYNCHRONOUS MOTORS
+*   Internal $\angle : \theta = \tan^{-1}(\frac{X_s}{R_a})$
+*   Torque $\angle = \delta$
+*   $E \angle \delta = V \angle 0 - (I \angle \mp \phi)(R_a + j X_s)$
+
+**Power Calculations:**
+*   If $R_a \neq 0$: $P_{mech} = 3 [\frac{VE}{Z_s} \cos(\theta - \delta) - \frac{E^2}{Z_s^2} R_a]$
+*   If $R_a = 0$: $P_{in} = P_{mech} = -3 \frac{VE}{Z_s} \sin(\delta)$
+
+### POWER FLOW: SYNCHRONOUS MOTORS
+1.  **Input (Elect. Power)**
+2.  $\rightarrow$ Copper losses
+3.  $\rightarrow$ **Electrical power input - Copper loss = Mechanical Power developed**
+4.  $\rightarrow$ Iron losses + Mechanical losses
+5.  $\rightarrow$ **Mechanical Power Developed - Iron loss - Mechanical loss = Mechanical power output ($\omega T_m$)**
+
+**Equations:**
+*   $P_{mech} = P_{in} - P_{Cu}$
+*   $P_{out} = P_{mech} - P_i - P_{fw}$
+*   $P_{out} = P_{in} - P_i - P_{Cu} - P_{fw}$
+*   $\eta = \frac{P_{out}}{P_{in}}$
+
+### Tesla SynRM
+**SynRM (Synchronous Reluctance Motor)** operates under very high reluctance of the laminated rotor with curved grooves based on the magnetic field pathway. Hence, it magnetically locks the stator and rotor system.

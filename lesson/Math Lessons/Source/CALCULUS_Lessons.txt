@@ -1,0 +1,172 @@
+# DIFFERENTIAL CALCULUS
+
+**PEB Training and Review**
+
+---
+
+## DERIVATIVES
+
+*   **Power Rule:** $\frac{d}{dx}(u^n) = n u^{n-1} \frac{du}{dx}$
+*   **Constant:** $\frac{dc}{dx} = 0$
+*   **Sum/Difference:** $\frac{d}{dx}(u \pm v) = \frac{du}{dx} \pm \frac{dv}{dx}$
+*   **Product:** $\frac{d}{dx}(uv) = v \frac{du}{dx} + u \frac{dv}{dx}$
+*   **Quotient:** $\frac{d}{dx}\left(\frac{u}{v}\right) = \frac{v \frac{du}{dx} - u \frac{dv}{dx}}{v^2}$
+
+---
+
+## DERIVATIVES (Trigonometric & Inverse)
+
+*   $\frac{d}{dx}(\sin u) = \cos u \frac{du}{dx}$
+*   $\frac{d}{dx}(\cos u) = -\sin u \frac{du}{dx}$
+*   $\frac{d}{dx}(\tan u) = \sec^2 u \frac{du}{dx}$
+*   $\frac{d}{dx}(\cot u) = -\csc^2 u \frac{du}{dx}$
+*   $\frac{d}{dx}(\sec u) = \sec u \tan u \frac{du}{dx}$
+*   $\frac{d}{dx}(\csc u) = -\csc u \cot u \frac{du}{dx}$
+
+*   $\frac{d}{dx}(\arcsin u) = \frac{1}{\sqrt{1 - u^2}} \frac{du}{dx}$
+*   $\frac{d}{dx}(\arccos u) = \frac{-1}{\sqrt{1 - u^2}} \frac{du}{dx}$
+*   $\frac{d}{dx}(\arctan u) = \frac{1}{1 + u^2} \frac{du}{dx}$
+*   $\frac{d}{dx}(\text{arccot } u) = \frac{-1}{1 + u^2} \frac{du}{dx}$
+*   $\frac{d}{dx}(\text{arcsec } u) = \frac{1}{u\sqrt{u^2 - 1}} \frac{du}{dx}$
+*   $\frac{d}{dx}(\text{arccsc } u) = \frac{-1}{u\sqrt{u^2 - 1}} \frac{du}{dx}$
+
+---
+
+## DERIVATIVES (Exponential & Logarithmic)
+
+*   $\frac{d}{dx}(e^u) = e^u \frac{du}{dx}$
+*   $\frac{d}{dx}(a^u) = a^u (\ln a) \frac{du}{dx}$
+*   $\frac{d}{dx}(\ln u) = \frac{1}{u} \frac{du}{dx}$
+*   $\frac{d}{dx}(\log_a u) = \frac{1}{u \ln a} \frac{du}{dx}$
+
+---
+
+## DERIVATIVES (Hyperbolic)
+
+*   $\frac{d}{dx}(\sinh u) = \cosh u \frac{du}{dx}$
+*   $\frac{d}{dx}(\cosh u) = \sinh u \frac{du}{dx}$
+*   $\frac{d}{dx}(\tanh u) = \text{sech}^2 u \frac{du}{dx}$
+*   $\frac{d}{dx}(\coth u) = -\text{csch}^2 u \frac{du}{dx}$
+*   $\frac{d}{dx}(\text{sech } u) = -\text{sech } u \tanh u \frac{du}{dx}$
+*   $\frac{d}{dx}(\text{csch } u) = -\text{csch } u \coth u \frac{du}{dx}$
+
+---
+
+## Applications of Differentiation
+
+**Tangent Line:** The slope of the tangent line at $x = c$ is equal to $f'(c)$.
+$$m_{\text{tan}} = \lim_{\Delta x \to 0} \left( \frac{\Delta y}{\Delta x} \right) = \frac{dy}{dx}$$
+
+---
+
+## RADIUS OF CURVATURE
+$$R_c = \frac{[1 + (y')^2]^{3/2}}{|y''|}$$
+
+---
+
+## RELATED RATES
+Related Rates: The $f'(x)$ represents the rate of change of function $f(x)$.
+Proportion for cone: $\frac{h}{b/2} = \frac{H}{B/2}$
+
+---
+
+## OPTIMIZATION (Maxima-Minima Analysis)
+
+*   **Largest Rectangle Inscribed in a Circle:** a square.
+*   **Largest Rectangle inscribed in a Semicircle:** $x=a$, $y=a/2$.
+*   **Largest Rectangle Inscribed in a Triangle (one side on base):** $x = b/2, y = h/2$.
+*   **Largest Rectangle Inscribed in a Triangle (one side on two sides):** $x = b/2, y = h/2$.
+*   **Sector of given Area but Minimum Perimeter:** $r = \sqrt{A}, \theta = 2\text{ rad}$.
+*   **Rectangle to be Fenced at 3 sides (Minimum Perimeter):** $x = 2y$.
+*   **Maximum Light on a Norman window:** $x = 2y, h = x$.
+*   **Longest Segment in Perpendicular Intersection:** $L_{\text{max}} = \sqrt{(a^{2/3} + b^{2/3})^3}$.
+*   **‘Sweet Spot’:** $x = \sqrt{y_1 y_2}$
+*   **Minimize Wire Length (Stake on Ground):** $x = \frac{d h_1}{h_1 + h_2}$
+*   **Maximum Cylinder Inscribed in a Cone:** $h = \frac{1}{3}H, r = \frac{2}{3}R$.
+*   **Maximum Cylinder Inscribed in a Sphere:** $V_{\text{sphere}} = \frac{4}{\sqrt[3]{27}} \pi R^3$ (Volume relations).
+
+---
+
+# INTEGRAL CALCULUS
+
+---
+
+## Integration Techniques
+
+*   $\int u^n du = \frac{u^{n+1}}{n+1} + C \quad (n \neq -1)$
+*   $\int \frac{1}{u} du = \ln |u| + C \quad (n = -1)$
+*   **Integration by Parts:** $\int u dv = uv - \int v du$
+
+---
+
+## Exponential and Logarithmic
+
+*   $\int e^u du = e^u + C$
+*   $\int a^u du = \frac{a^u}{\ln a} + C$
+*   $\int (\ln u) du = u(\ln u - 1) + C$
+*   $\int (\log_a u) du = \frac{1}{\ln a} u(\ln u - 1) + C$
+
+---
+
+## Trigonometric Functions
+
+*   $\int \sin u du = -\cos u + C$
+*   $\int \cos u du = \sin u + C$
+*   $\int \tan u du = \ln |\sec u| + C$
+*   $\int \cot u du = \ln |\sin u| + C$
+*   $\int \sec u du = \ln |\sec u + \tan u| + C$
+*   $\int \csc u du = \ln |\csc u - \cot u| + C$
+*   $\int \sec^2 u du = \tan u + C$
+*   $\int \csc^2 u du = -\cot u + C$
+*   $\int \tan u \sec u du = \sec u + C$
+*   $\int \cot u \csc u du = -\csc u + C$
+
+---
+
+## Hyperbolic Functions
+
+*   $\int \sinh u du = \cosh u + C$
+*   $\int \cosh u du = \sinh u + C$
+*   $\int \text{sech } u \tanh u du = -\text{sech } u + C$
+*   $\int \text{csch } u \coth u du = -\text{csch } u + C$
+*   $\int \text{sech}^2 u du = \tanh u + C$
+*   $\int \text{csch}^2 u du = -\text{coth } u + C$
+*   $\int \tanh u du = \ln |\cosh u| + C$
+*   $\int \coth u du = \ln |\sinh u| + C$
+
+---
+
+## Area Integrals
+
+*   **Vertical Strip:** $A = \int_{x_1}^{x_2} |y_2 - y_1| dx$
+*   **Horizontal Strip:** $A = \int_{y_1}^{y_2} |x_2 - x_1| dy$
+*   **Polar Area:** $A = \frac{1}{2} \int_{\theta_1}^{\theta_2} |r|^2 d\theta$
+
+---
+
+## Centroid Integrals
+
+*   $\bar{x} = \frac{\int_{x_1}^{x_2} x |y_2 - y_1| dx}{\int_{x_1}^{x_2} |y_2 - y_1| dx}$
+*   $\bar{y} = \frac{\frac{1}{2} \int_{x_1}^{x_2} |y_2 - y_1| \times |y_2 + y_1| dx}{\int_{x_1}^{x_2} |y_2 - y_1| dx}$
+*   Horizontal formulations follow similar logic using $y$.
+
+---
+
+## ARCLENGTH
+*   $L = \int_{x_1}^{x_2} \sqrt{1 + (y')^2} dx$
+*   $L = \int_{y_1}^{y_2} \sqrt{1 + (x')^2} dy$
+
+---
+
+## Solids of Revolution
+
+**Method of Disks and Washers:**
+*   $V = \int_a^b \pi(x_2^2 - x_1^2) dy$
+*   $V = \int_a^b \pi(y_2^2 - y_1^2) dx$
+
+---
+
+## WORK
+*   $W = F \times s$
+*   $W = \int_a^b F(s) ds$
+*   $Work = \int_{x_1}^{x_2} F(x) dx$

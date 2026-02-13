@@ -1,0 +1,134 @@
+# POWER PLANT
+
+## HYDROELECTRIC POWER
+
+### Energy Analysis of HyroPower Plant
+*   **Continuity Equation:** $Q = A_c v$
+*   **Water power:** $P = \gamma Q h$
+*   **Turbine output:** $P_T = \gamma Q h \eta_T$
+*   **Generator output:** $P_g = \gamma Q h \eta_T \eta_g$
+
+**Electrical Equations:**
+*   **For 3-phase:** $P_g = \sqrt{3} \times IV \times pf$
+*   **For 1-phase:** $P_g = IV \times pf$
+
+---
+
+### Specific Speed of Turbines
+Defined as the number of revolutions per minute at which a given runner would revolve if it were so reduced in proportions that it would develop 1 hp under one foot head; it serves to classify a hydraulic turbine and to indicate its type.
+
+*   $N_s = 120 f / p$
+*   **Dimensional:** $N_s = N \frac{P^{1/2}}{H^{5/4}}$
+
+**Units:**
+*   Eng: $P = HP, H = ft, N = rpm$
+*   SI: $P = kW, H = m, N = rpm$
+
+**Turbine Classification Table:**
+| Turbine | Classification | Specific speed |
+| :--- | :--- | :--- |
+| Pelton turbine | Impulse | 10 — 45 |
+| Francis turbine | Reaction | 45 — 450 |
+| Kaplan turbine | Reaction | 450 — 1000 |
+
+---
+
+### Types of Turbines
+*   **IMPULSE (PELTON) TURBINE:** Uses splitter ridges and buckets.
+*   **REACTION (FRANCIS) TURBINE:** Uses volutes, stay vanes, wicket gates, and runner blades.
+
+---
+
+## SOLAR POWER
+
+### Solar Energy
+*   **Solar Constant = 1353 W/m2**
+*   Useful energy from the sun is between **10 AM – 2 PM = 1000 W/m2**
+*   **Pyranometer** – is the instrument used to measure the total solar radiation.
+
+---
+
+### Photovoltaic Solar Cells
+*   **Formula:** $P = t_g a_s SA = \sqrt{3} I_L V_L pf$
+*   $t_g$ = glass reflectivity
+*   $a_s$ = surface absorptivity (EVA)
+*   $A$ = area, m2
+
+---
+
+## WIND & TIDAL POWER
+
+### Wind Power Plant
+*   **Formula:** $P = \frac{\rho A v^3}{2 g_c} \eta_T \eta_g$
+*   For air at 20-25°C at 1 atm: $\rho = 1.2 \text{ kg/m}^3 = 0.075 \text{ lb}_m/\text{ft}^3$
+*   $\rho = \frac{P}{RT}$
+*   **Betz's Limit:** The maximum mechanical efficiency of a wind turbine is **59.3%**.
+
+---
+
+### TIDAL POWER
+*   **Formula:** $P = \gamma_w Q h$
+*   $A$ = area of barrage basin, m2
+*   $\gamma_w = 9.81 \text{ kN/m}^3$
+*   $h$ = tidal head, m
+
+---
+
+## NUCLEAR POWER
+
+### Basic Concept
+*   **Fission Reaction:** Splitting of an atom into two daughter nuclei releasing large amount of energy.
+*   Hahn and Strassman bombarded U-235 with neutrons and obtained elements 56 and 36.
+*   **Equation:** $E = mc^2$
+*   For U-235: $E = 200 \text{ MeV/atom}$
+*   Conversion: $1 \text{ MeV} = 1.6 \times 10^{-19} \text{ J}$
+
+### Nuclear Power Plant System
+*   $P = 4.74 M E \times \eta$
+*   $R_{\text{fission}} = 6.25 \times 10^{15} P / E$
+
+**Variables:**
+*   $P$ = in kW
+*   $M$ = U-235 consumed, g/day
+*   $E$ = 200 MeV for U-235
+*   $\eta$ = plant efficiency
+*   $R_{\text{fission}}$ = fission rate = atom / s
+
+### Reactor Components & Types
+*   **Types of fuel:** (a) Natural uranium ($^{238}U = 99.28\%$; $^{235}U = 0.714\%$), (b) Enriched uranium, (c) Uranium 233, (d) $^{234}Pu$.
+*   **Moderators:** (a) Heavy water ($D_2O$), (b) Ordinary water ($H_2O$), (c) Graphite, (d) Beryllium.
+*   **Coolants:** (a) Gaseous (air, $CO_2$), (b) Water/organic liquids, (c) Liquid metals.
+
+**Reactor Designs:**
+*   **Pressurized water reactor (PWR):** Primary coolant circuit at high temperature and pressure (270 C, 2000 psi).
+*   **Boiling water reactor (BWR):** Simplest form where feedwater from the turbine enters the reactor directly.
+*   **Example:** Morong, Bataan with a capacity of 620 MW.
+*   **Kashiwazaki-Kariwa:** 8,212 MWh (Niigata, Japan).
+*   **Chernobyl:** Accident on April 26, 1986.
+
+---
+
+## LOAD DURATION CURVES & PLANT FACTORS
+
+### Planning decision parameters:
+1. Total power output to be installed.
+2. Size of generating units.
+
+### Capacity Determination:
+1. First demand ($kW_{max}$) estimated.
+2. Growth of demand anticipated.
+3. Reserve capacity required.
+
+---
+
+### Plant Factor Formulas
+*   **Load Factor (LF):** $LF = \frac{AL}{PL}$
+*   **Average Load (AL):** $AL = \frac{\sum(\Delta t \times L)}{24h \text{ or } 8760h}$
+*   **Capacity Factor (CF):** $CF = \frac{AL}{C}$
+*   **Reserve Factor (RF):** $RF = \frac{LF}{CF} = \frac{C}{PL} > 1$
+*   **Reserve:** $Reserve = C - AL$ (Note: Often defined as $C - PL$)
+*   **Use Factor (UF):** $UF = \frac{P_{gen}}{C \times t_{op}} = \frac{AL \times 8760}{C \times t_{op}}$
+*   **Diversity Factor (DF):** $DF = \frac{\sum PL_{sub}}{PL_{main}}$
+*   **Down-time ($t_d$):** $t_d = 8760 - t_{op}$
+
+*Note: $C = PL_{inst}$ or power production upon plant installation without power loss.*

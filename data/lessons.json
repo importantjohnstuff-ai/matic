@@ -1,0 +1,220 @@
+{
+  "files": {
+    "Math": [
+      {
+        "name": "Advanced Math.md",
+        "path": "lesson/Math Lessons/Advanced Math.md",
+        "size": 839,
+        "timestamp": 1770990751241.8716,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Calculator Technique.md",
+        "path": "lesson/Math Lessons/Calculator Technique.md",
+        "size": 3611,
+        "timestamp": 1770990663571.855,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Differential Calculus.md",
+        "path": "lesson/Math Lessons/Differential Calculus.md",
+        "size": 2611,
+        "timestamp": 1770990673357.8086,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Differential Equation.md",
+        "path": "lesson/Math Lessons/Differential Equation.md",
+        "size": 3704,
+        "timestamp": 1770990718539.6387,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Geometry.md",
+        "path": "lesson/Math Lessons/Geometry.md",
+        "size": 7095,
+        "timestamp": 1770990698899.4224,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Integral Calculus.md",
+        "path": "lesson/Math Lessons/Integral Calculus.md",
+        "size": 2519,
+        "timestamp": 1770990696963.6206,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Laplace Transform.md",
+        "path": "lesson/Math Lessons/Laplace Transform.md",
+        "size": 1233,
+        "timestamp": 1770990749168.8147,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Minima-Maxima.md",
+        "path": "lesson/Math Lessons/Minima-Maxima.md",
+        "size": 1025,
+        "timestamp": 1770990739946.6155,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Numerical Methods.md",
+        "path": "lesson/Math Lessons/Numerical Methods.md",
+        "size": 2139,
+        "timestamp": 1770990745964.9497,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Probability and Statistics.md",
+        "path": "lesson/Math Lessons/Probability and Statistics.md",
+        "size": 2195,
+        "timestamp": 1770990729956.8247,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Trignometry.md",
+        "path": "lesson/Math Lessons/Trignometry.md",
+        "size": 310,
+        "timestamp": 1770990710892.8547,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Vector Analysis.md",
+        "path": "lesson/Math Lessons/Vector Analysis.md",
+        "size": 3276,
+        "timestamp": 1770990733798.4602,
+        "date": "Feb 13, 2026"
+      }
+    ],
+    "Engineering Sciences": [
+      {
+        "name": "Chemistry.md",
+        "path": "lesson/Engineering Science Lessons/Chemistry.md",
+        "size": 5227,
+        "timestamp": 1770990356552.5037,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Economy.md",
+        "path": "lesson/Engineering Science Lessons/Economy.md",
+        "size": 6079,
+        "timestamp": 1770990459750.821,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Fluid Mechanics.md",
+        "path": "lesson/Engineering Science Lessons/Fluid Mechanics.md",
+        "size": 1286,
+        "timestamp": 1770990429436.87,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Mechanics.md",
+        "path": "lesson/Engineering Science Lessons/Mechanics.md",
+        "size": 1672,
+        "timestamp": 1770990370369.822,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Physics.md",
+        "path": "lesson/Engineering Science Lessons/Physics.md",
+        "size": 4094,
+        "timestamp": 1770990427362.9255,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Strength of Materials.md",
+        "path": "lesson/Engineering Science Lessons/Strength of Materials.md",
+        "size": 3624,
+        "timestamp": 1770990422264.7917,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Thermodynamics.md",
+        "path": "lesson/Engineering Science Lessons/Thermodynamics.md",
+        "size": 4355,
+        "timestamp": 1770990372425.0913,
+        "date": "Feb 13, 2026"
+      }
+    ],
+    "Professional": [
+      {
+        "name": "AC Circuits.md",
+        "path": "lesson/Professional Lessons/AC Circuits.md",
+        "size": 3881,
+        "timestamp": 1770990974754.5276,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "AC Machines.md",
+        "path": "lesson/Professional Lessons/AC Machines.md",
+        "size": 6320,
+        "timestamp": 1770991015739.3293,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "DC Circuits.md",
+        "path": "lesson/Professional Lessons/DC Circuits.md",
+        "size": 3956,
+        "timestamp": 1770990964833.8716,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "DC Machines.md",
+        "path": "lesson/Professional Lessons/DC Machines.md",
+        "size": 3521,
+        "timestamp": 1770990994611.9407,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Electromagnetism.md",
+        "path": "lesson/Professional Lessons/Electromagnetism.md",
+        "size": 6918,
+        "timestamp": 1770991056567.3308,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Fault Analysis.md",
+        "path": "lesson/Professional Lessons/Fault Analysis.md",
+        "size": 1953,
+        "timestamp": 1770991121709.24,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Illumination.md",
+        "path": "lesson/Professional Lessons/Illumination.md",
+        "size": 2002,
+        "timestamp": 1770991129667.4548,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Power Factor Correction.md",
+        "path": "lesson/Professional Lessons/Power Factor Correction.md",
+        "size": 2547,
+        "timestamp": 1770991131687.2144,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Powerplants.md",
+        "path": "lesson/Professional Lessons/Powerplants.md",
+        "size": 4553,
+        "timestamp": 1770991116312.8525,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Transformers.md",
+        "path": "lesson/Professional Lessons/Transformers.md",
+        "size": 6805,
+        "timestamp": 1770991036188.1694,
+        "date": "Feb 13, 2026"
+      },
+      {
+        "name": "Transmission Lines.md",
+        "path": "lesson/Professional Lessons/Transmission Lines.md",
+        "size": 4536,
+        "timestamp": 1770991109588.3062,
+        "date": "Feb 13, 2026"
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+# GEOMETRY
+
+## Arc Length and Angular Velocity
+
+*   **Arc length:**
+    $s = r\theta$
+*   **Angular velocity:**
+    $v = \omega r$
+
+## Sine Law and Cosine Law
+
+### Sine Law:
+$$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$$
+
+### Cosine Law:
+*   $a^2 = b^2 + c^2 – 2bc \cos A$
+*   $b^2 = a^2 + c^2 – 2ac \cos B$
+*   $c^2 = a^2 + b^2 – 2ab \cos C$
+
+## Area of Oblique Triangles
+
+*   **Heron's Formula** (for area of oblique triangles)
+
+    *   **Semi-perimeter:**
+        $s = \frac{a+b+c}{2}$
+    *   **Area of triangle:**
+        $A = \sqrt{s(s−a)(s – b)(s – c)}$
+
+## DISTANCE & SLOPE
+
+*   **Distance Formula** - equation for the distance of two points in the coordinate plane. Given two points $A(x_1, y_1)$ and $B(x_2, y_2)$, the distance is given by:
+
+    *   **Two dimensional:**
+        $d = \sqrt{(y_2 - y_1)^2 + (x_2 - x_1)^2}$
+    *   **Three-dimensional:**
+        $d = \sqrt{(y_2 - y_1)^2 + (x_2 - x_1)^2 + (z_2 - z_1)^2}$
+
+*   **Slope of a Line** - refers to the steepness of a line relative to the axes. Given two points,
+    $$slope = m = \frac{\text{rise}}{\text{run}} = \frac{y_2 - y_1}{x_2 - x_1}$$
+
+## INCLINATION OF A LINE
+If $\theta$ is the angle formed by the line with the horizontal:
+$$m = \frac{y_2 - y_1}{x_2 - x_1} = \tan(\theta)$$
+If lines 1 and 2 exist with slopes $m_1$ and $m_2$ respectively,
+*   **Parallel :** $m_1 = m_2$
+*   **Perpendicular :** $m_1 = -1/m_2$
+
+## ANGLE BETWEEN LINES
+
+Angle between two lines:
+$$\tan(\theta) = \frac{m_2 - m_1}{1 + m_2 m_1}$$
+
+## POINT TO A LINE
+
+Distance of a point $(x_1, y_1)$ to a line:
+$$d_\perp = \frac{Ax_1 + By_1 + C}{\pm\sqrt{A^2 + B^2}}$$
+
+## SEGMENT DIVISION & MIDPOINTS
+
+*   For segment division (given points $A(x_1, y_1)$, $B(x_2, y_2)$ and ratio $r_1 : r_2$ for point $C(x, y)$):
+    $$x = \frac{x_1 r_2 + x_2 r_1}{r_1 + r_2}$$
+    $$y = \frac{y_1 r_2 + y_2 r_1}{r_1 + r_2}$$
+*   For midpoints:
+    $$x = \frac{x_1+x_2}{2} \quad \text{and} \quad y = \frac{y_1+y_2}{2}$$
+
+## AREA OF TRIANGLE
+
+**Area of a triangle given the coordinates** - given a triangle formed by three non-collinear points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$:
+$$A_\Delta = \frac{1}{2} \begin{vmatrix} x_1 & y_1 & 1 \\ x_2 & y_2 & 1 \\ x_3 & y_3 & 1 \end{vmatrix}$$
+
+## FORMS OF A LINE
+
+**The Equations of Lines:**
+
+*   **General/Standard Form:** $Ax + By + C = 0$
+*   **Slope-Intercept Form:** $y = mx + b$
+*   **Point-Slope Form:** $y - y_0 = m(x - x_0)$
+*   **Two-Point Form:** $y - y_1 = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1)$
+*   **Intercept Form:** $\frac{x}{a} + \frac{y}{b} = 1$
+
+## CONICS SECTIONS
+
+**CONIC SECTIONS** - are curves of the intersection between a plane and a vertical cone ('nappe'). It is also the locus of all points which are at fixed ratio (e, **eccentricity**) from a given point (**focus**).
+
+## CONICS SECTIONS: DETERMINANT
+
+**General Form of Conics:**
+$$Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$$
+The determinant, $B^2 - 4AC$ is a shorthand way of determining the existence of the four conics:
+
+| $B^2 - 4AC$ | Conic     | Eccentricity, e |
+| :---------- | :-------- | :-------------- |
+| $< 0$       | Ellipse   | $< 1.0$         |
+| $= 0$       | Parabola  | $= 1.0$         |
+| $> 0$       | Hyperbola | $> 1.0$         |
+
+## CIRCLE
+
+**CIRCLE** - a locus of points that is equidistant from a fixed point, the center.
+
+**General Form:** $Ax^2 + Cy^2 + Dx + Ey + F = 0$
+*   **Center, C (h, k):** $h = \frac{-D}{2A}$ and $k = \frac{-E}{2A}$
+*   **Radius, r:** $r = \sqrt{\frac{D^2 + E^2 - 4AF}{4A^2}}$
+
+**Standard Form of a Circle:**
+$$(x-h)^2 + (y-k)^2 = r^2$$
+*   **Area** = $\pi r^2$
+*   **Circumference** = $2\pi r$
+
+## PARABOLA
+
+**PARABOLA** - locus of points that are always equidistant from a fixed point (**focus**) and a line called **directrix**.
+
+**Standard Form of a Parabola :**
+*   **Vertical:** $(x-h)^2 = 4p(y-k)$
+*   **Horizontal:** $(y-k)^2 = 4p(x-h)$
+
+*   **Eccentricity:** $e = 1$
+*   **Latus Rectum:** $LR = 4p$
+
+## ELLIPSE
+
+-Locus of points such that the sum of its distance from two fixed points (**foci**) is constant.
+
+**Standard Forms:**
+*   **Vertical:** $\frac{(x-h)^2}{b^2} + \frac{(y-k)^2}{a^2} = 1$
+*   **Horizontal:** $\frac{(x-h)^2}{a^2} + \frac{(y-k)^2}{b^2} = 1$
+
+where:
+*   $2a$ – length of major axis
+*   $2b$ – length of minor axis
+*   $2c$ – distance between two foci
+
+**Length Relation :**
+*   $b^2 = a^2 – c^2$
+*   $LR = \frac{2b^2}{a}$
+*   $e = \frac{c}{a} < 1$
+
+## HYPERBOLA
+
+**HYPERBOLA** - locus of points such that the difference of the distance between two fixed points (**foci**) is constant at $2a$.
+
+**Standard Forms:**
+*   **Vertical:** $\frac{(y-k)^2}{a^2} - \frac{(x-h)^2}{b^2} = 1$
+*   **Horizontal:** $\frac{(x-h)^2}{a^2} - \frac{(y-k)^2}{b^2} = 1$
+
+**Length Relation :**
+*   $b^2 = c^2 - a^2$
+*   $LR = \frac{2b^2}{a}$
+*   $e = \frac{c}{a} > 1$
+
+## POLYGONS
+
+*   **Perimeter:** $P = sn$
+*   **Interior angle:** $\theta_i = \frac{180^\circ (n-2)}{n}$
+*   **Diagonals:** $D = \frac{n(n-3)}{2}$
+*   **Area:** $A = \frac{ns^2}{4 \tan\left(\frac{180^\circ}{n}\right)}$
+*   **Apothem:** $a = \frac{s}{2 \tan\left(\frac{180^\circ}{n}\right)}$
+
+## POLYGON AND CIRCLE
+
+### Area of Polygon Inscribed in a Circle
+$$A = \frac{1}{2}\left(nr^2 \sin \frac{360^\circ}{n}\right)$$
+
+### Area of Polygon Circumscribed on a Circle
+$$A = nr^2 \tan\frac{180^\circ}{n}$$
+
+## CIRCLE (Additional Formulas)
+
+*   **Area:** $A = \pi r^2 = \frac{1}{4}\pi d^2$
+*   **Circumference:** $C = 2\pi r = \pi d$
+*   **Sector Area:** $A_{sec} = \frac{1}{2}\theta r^2$
+*   **Segment (Zone) Area:** $A_{sec} = \frac{1}{2}r^2(\theta – \sin\theta)$
+
+## INCENTER AND CIRCUMCENTER
+
+*   **Incenter Radius ($r_I$):** $r_I = \frac{A_\Delta}{s}$
+*   **Circumcenter Radius ($r_C$):** $r_C = \frac{abc}{4A_\Delta}$
+
+## RECTANGULAR PARALLELIPIPED
+
+*   **Lateral Surface Area (LSA):** $LSA = 2lh + 2wh$
+*   **Total Surface Area (TSA):** $TSA = 2lw + 2lh + 2wh$
+*   **Volume:** $V = lwh$
+
+## CYLINDER
+
+*   **Volume:** $V = \pi r^2 h = \frac{1}{4}\pi d^2 h$
+*   **Lateral Surface Area (LSA):** $LSA = 2\pi rh$
+
+## CONE
+
+*   **Volume:** $V = \frac{1}{3}Bh = \frac{1}{3}\pi r^2 h$
+*   **Slant Height:** $s = \sqrt{h^2 + r^2}$
+*   **Lateral Surface Area (LSA):** $LSA = \pi rs$
+
+## PYRAMID
+
+### Surface Area of a Pyramid
+*   **TSA** = $B + LSA$
+*   **LSA** = $\frac{1}{2} P S_l$
+
+### Volume of a Pyramid:
+$$V = \frac{1}{3} A_b h$$
+Where:
+*   $S_l$ = slant height
+*   $h$ = height
+*   $e$ = length of a lateral edge
+
+## SPHERE
+
+*   **Volume:** $V = \frac{4}{3}\pi r^3 = \frac{1}{6}\pi d^3$
+*   **Surface Area:** $SA = 4\pi r^2$
+*   **Volume of Spherical Cap (or segment of one base):** $V = \frac{\pi}{3} h^2 (3r - h)$
+*   **Volume of Spherical Segment (of two bases):** $V = \frac{\pi h}{6} (3a^2 + 3b^2 + h^2)$
+*   **Surface Area of Spherical Lune:** $SA = \frac{\pi r^2 \theta}{90^\circ}$
+*   **Volume of Spherical Wedge:** $V = \frac{\pi r^3 \theta}{270^\circ}$

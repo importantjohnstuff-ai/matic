@@ -1,0 +1,47 @@
+# MECHANICS
+
+## Formula Summary
+
+### Case 1: Weight on Flat Pavement
+$$ma/g_c = P(\cos \theta + \mu \sin \theta) - W\mu$$
+
+### Case 2: Inclined, Force Parallel to Incline
+$$ma/g_c = P - W(\sin \theta \pm \mu \cos \theta)$$
+
+### Case 3: Inclined, Horizontal Force
+$$ma/g_c = P(\cos \theta \mp \mu \sin \theta) - W(\sin \theta \pm \mu \cos \theta)$$
+> **Note:** $lb_m = lb_f$ but $N = kg \times 9.81$
+
+### Case 4: Ladder Friction
+$$\frac{\mu_1(\mu_2 + \tan \theta)}{1 + \mu_1\mu_2} = \frac{FL_f + WL_c}{(F + W)L}$$
+
+### Case 5: Dry Friction: Belts
+$$\frac{T_1}{T_2} = e^{\mu\theta}; \quad \theta = \text{turns in rad}$$
+
+### Case 6: Attwood Pulley (frictionless)
+$$a = g \times \frac{W_1 - W_2}{W_1 + W_2}$$
+
+### Case 7: Stone on a Well
+$$t_T = \sqrt{\frac{2h}{g}} + \frac{h}{v_{\text{sound}}}$$
+*   $v_{\text{sound}} \approx 343 \text{ m/s}$
+*   $v = 331 + 0.6T_C$
+
+### Case 8: The Trinity - Translation
+1.  $a = (v_f - v_i) / t$
+2.  $x = \frac{1}{2}at^2 + v_it + x_o$
+3.  $x = (v_f^2 - v_i^2) / 2a + x_o$
+
+### Case 9: Ballistics for Bullet Speed
+$$v_b = \frac{m_b + m_w}{m_b} \sqrt{2gh}$$
+$$h = L(1 - \cos \theta)$$
+
+### Case 10: Projectile / Free-fall
+*   **EQN3:** $-g/2 \quad v_o \sin \theta \quad y_o - y = T$
+*   $x_{\text{max}} = R = v_o \cos \theta \times T$
+*   $y_{\text{max}} = -(v_o \sin \theta)^2 / 2g + y_o$
+
+### Case 11: Circular Motion
+$$F_C = \frac{mv^2}{r}; \quad v = \omega r; \quad \omega = 2\pi N / 60$$
+*   **Friction only:** $\frac{v^2}{rg} = \mu$
+*   **Banking only:** $\frac{v^2}{rg} = \tan \theta$
+*   **F + B:** $\frac{v^2}{rg} = \frac{\sin \theta + \mu \cos \theta}{\cos \theta - \mu \sin \theta}$

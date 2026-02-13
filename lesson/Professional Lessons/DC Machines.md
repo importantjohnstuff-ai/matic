@@ -1,0 +1,92 @@
+# DC MACHINES
+
+## Introduction
+*   **DC Generator:** Converts mechanical power ($\omega T$) into DC electrical power ($EI$).
+*   **DC Motor:** Converts DC electrical power into mechanical power.
+
+## Main Constructional Features
+*   **Magnetic frame or yoke:** The outer cylindrical part that provides mechanical protection to the inner parts of the machine.
+*   **Pole core and pole shoes:** Support the field or exciting coils and spread out the magnetic flux over the armature periphery more uniformly.
+*   **Field or exciting coils:** Enamelled copper wire is used for the construction of field or exciting coils.
+*   **Armature core:** Cylindrical in shape and keyed to the rotating shaft; houses the conductors in the slots.
+*   **Armature winding:** The insulated conductors housed in the armature slots where conversion of power takes place.
+
+## Commutator Action
+*   **Generator Action:** Converts the AC induced in the armature conductors into unidirectional current in the external load circuit.
+*   **Motor Action:** Converts the alternating torque into unidirectional (continuous) torque produced in the armature.
+*   **Brushes:** Because of the positioning of the brushes, the measured voltage at the x-y terminals is uni-directional.
+
+---
+
+## EMF Equation (Generator)
+$$E = \frac{p\phi NZ}{60a}$$
+
+**Where:**
+*   $p$ = number of poles
+*   $\phi$ = flux per pole (Wb)
+*   $Z$ = number of conductors = $\text{slots} \times \text{conductor/slot}$
+*   $N$ = speed in rpm
+*   $a$ = number of parallel paths
+    *   $a = p$ for lap winding
+    *   $a = 2$ for wave winding
+
+---
+
+## Types of DC Generators
+Classified according to the method of excitation:
+1.  **Separately excited generators:** Field coils are energized from an independent external DC source.
+    *   $E_g = V + I_aR_a + V_{brush}$
+2.  **Self-excited generators:** Field coils are energized by the current produced by the generator itself.
+    *   **Shunt wound:** Field winding is in parallel with the armature.
+    *   **Series wound:** Field winding is in series with the armature.
+    *   **Compound wound:** Combination of shunt and series fields.
+
+---
+
+## Generator Formulas
+
+### Shunt Wound Generator
+*   $I_{sh} = \frac{V}{R_{sh}}$
+*   $I_a = I_{sh} + I$
+*   $V = E_g - I_aR_a$
+*   $\text{Power Developed} = E_g I_a$
+*   $\text{Power Delivered} = IV$
+
+### Series Wound Generator
+*   $I_a = I_{se} = I$
+*   $V = E_g - I(R_a + R_{se})$
+*   $\text{Power Developed} = E_g I_a$
+*   $\text{Power Delivered} = IV$
+
+### Compound Wound Generator
+*   **Short Shunt:**
+    *   $I_{se} = I$
+    *   $I_{sh} = \frac{V + I_{se}R_{se}}{R_{sh}}$
+    *   $V = E_g - I_aR_a - I_{se}R_{se}$
+*   **Long Shunt:**
+    *   $I_{sh} = \frac{V}{R_{sh}}$
+    *   $I_a = I_{se} = I + I_{sh}$
+    *   $V = E_g - I_a(R_a + R_{se})$
+
+---
+
+## DC Motors
+
+### Back EMF Equation
+$$E_b = \frac{p\phi NZ}{60a}$$
+
+### Torque Equations
+*   **Developed Torque:** $T_a = k\phi I_a$
+    *   $k = \frac{pZ}{2\pi a}$
+*   **Shaft Torque:** $P_b = \frac{2\pi T_{sh} N}{60}$
+
+### Speed Relation
+$$\frac{\phi_2 \times N_2}{\phi_1 \times N_1} = \frac{E_{b2}}{E_{b1}}$$
+
+### Speed and Torque Ratios
+*   **Shunt Motor:**
+    *   $\frac{E_{b2}}{E_{b1}} = \frac{N_2}{N_1}$
+    *   $\frac{T_2}{T_1} = \frac{I_{a2}}{I_{a1}}$
+*   **Series Motor:**
+    *   $\frac{E_{b2}}{E_{b1}} = \frac{N_2}{N_1} \left( \frac{I_{L2}}{I_{L1}} \right)$
+    *   $\frac{T_2}{T_1} = \left( \frac{I_{L2}}{I_{L1}} \right)^2$

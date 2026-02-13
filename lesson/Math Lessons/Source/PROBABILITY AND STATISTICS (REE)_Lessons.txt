@@ -1,0 +1,75 @@
+# PROBABILITY & STATISTICS
+
+**PEB Training and Review**
+
+---
+
+## COMBINATORICS
+
+*   **Combination:** $N = nCr = \frac{n!}{r!(n-r)!} \to nCr$
+*   **Permutation:** $N = nPr = \frac{n!}{(n-r)!}$
+*   **Circular Permutation:**
+    *   **Flip:** $N = (n-1)! / 2$
+    *   **Non-flip:** $N = (n-1)!$
+*   **Alternation:** $N = g! \times (a!)^g$
+*   **Proximity:** $N = (n+1)(n! \times p!)$
+
+---
+
+## LAWS OF PROBABILITY
+
+*   $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+*   **Mutually exclusive events:** $P(A \cap B) = 0$
+*   **Binomial ($n < 20$):** $P = {}_nC_x \times p^x \times (1-p)^{n-x}$
+*   **Poisson's ($n > 20$):** $P = \frac{e^{-np} (np)^x}{x!}$
+*   **Bayesian:** $P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}$
+
+---
+
+## STANDARD POKER PLAYING CARDS
+*Example set of 52 poker playing cards:*
+
+| Suit | Ace | 2-10 | Jack | Queen | King |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Clubs | A♣ | 2♣-10♣ | J♣ | Q♣ | K♣ |
+| Diamonds | A♦ | 2♦-10♦ | J♦ | Q♦ | K♦ |
+| Hearts | A♥ | 2♥-10♥ | J♥ | Q♥ | K♥ |
+| Spades | A♠ | 2♠-10♠ | J♠ | Q♠ | K♠ |
+
+---
+
+## CENTRAL TENDENCY
+
+*   **Arithmetic mean:** $\bar{x} = \frac{\sum x}{n} = \frac{\sum fx}{\sum f}$
+*   **Root mean square (RMS):** $\sqrt{\sum x^2 / n}$
+*   **Geometric mean:** $(x_1 x_2 \dots x_n)^{1/n}$
+*   **Harmonic mean:** $n \div \sum \frac{1}{x}$
+
+---
+
+## DISPERSION, SKEWNESS, AND KURTOSIS
+
+*   **Population Standard Deviation:** $\sigma_x$
+*   **Sample Standard Deviation:** $\sigma_{x-1}$
+*   **Population Variance:** $\sigma_x^2$
+*   **Sample Variance:** $\sigma_{x-1}^2$
+
+**Skewness:**
+*   **Positive Skew:** Mean - Median > 0
+*   **Symmetrical Distribution:** Mean - Median = 0
+*   **Negative Skew:** Mean - Median < 0
+
+---
+
+## NORMAL DISTRIBUTION (Gaussian Distribution)
+*A bell-shaped curve used to model real-world processes and phenomena.*
+
+**Normal Distribution Case 1:**
+*   Given $\bar{x}$, $s$, and $x$:
+*   For $< x$: $P((x - \bar{x})/s)$
+*   For $> x$: $R((x - \bar{x})/s)$
+
+**Normal Distribution Case 2:**
+*   Given table data:
+*   For $< x$: $P(x \triangleright t)$
+*   For $> x$: $R(x \triangleright t)$

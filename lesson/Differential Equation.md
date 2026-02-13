@@ -1,0 +1,119 @@
+# DIFFERENTIAL EQUATIONS
+
+**PEB Training and Review**
+
+---
+
+## Differential Equations
+
+**Differential equation** is an equation involving derivatives.
+
+*   **Ordinary DE (ODE):** One independent variable.
+    $$y''' + 2y'' - 3xy' + 5y + 7 = 0$$
+*   **Partial DE (PDE):** Two or more independent variables.
+    $$\frac{\partial u}{\partial x} + \frac{\partial u}{\partial y} + \frac{\partial u}{\partial z} = \beta \frac{\partial^2 u}{\partial t^2}$$
+
+### Order of a Differential Equation
+*   **Order** is the order of the highest order derivative of the unknown function explicitly appearing in the equation.
+    *   Example: $y''' + 2y'' - 3xy' + 5y + 7 = 0$ (Order is 3)
+    *   Example: $(y'' + 0.6y')^3 + 0.57y \sin(0.16x) = 0$ (Order is 2, due to $y''$)
+
+### Solutions of Differential Equations
+*   **Solution** is any function (or formula for a function) that satisfies the equation.
+*   **General solution** - a formula that describes all solutions to the equation.
+*   **Specific solution** - a formula that describes a solution at a boundary.
+    *   Initial Value Problem (IVP)
+    *   Boundary Value Problem
+
+---
+
+## Separable ODE
+$$\frac{dy}{dx} = f(x)g(y)$$
+
+---
+
+## Linear ODE
+$$\frac{dy}{dx} + P(x)y = Q(x)$$
+$$y \cdot u = \int u \cdot Q(x)dx + C$$
+$$u = e^{\int P(x)dx}$$
+
+---
+
+## Homogenous ODE
+$$\frac{dy}{dx} = f\left( \frac{y}{x} \right)$$
+**Substitution:** $y = vx$
+
+---
+
+## Bernoulli ODE
+$$\frac{dy}{dx} + P(x)y = Q(x)y^n$$
+$$y^{1-n} \cdot u = (1 - n) \int u \cdot Q(x)dx + C$$
+$$u = e^{(1-n) \int P(x)dx}$$
+
+---
+
+## Exact Equations
+$$Mdx + Ndy = 0$$
+$$\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}$$
+$$\int M \partial x + \int N \partial y = C$$
+
+---
+
+## Inexact Equations
+$$Mdx + Ndy = 0$$
+$$\frac{\partial M}{\partial y} \neq \frac{\partial N}{\partial x}$$
+
+For Integrating factor: let $Q(x) = \frac{\frac{\partial N}{\partial x} - \frac{\partial M}{\partial y}}{M}$ (or alternative forms depending on variable)
+$$u = e^{\int Q(x)dx}$$
+**Solution:** solve $(u \cdot M)dx + (u \cdot N)dy = 0$
+
+---
+
+## Linear Second-Order and Higher-Order ODEs
+
+*   **General Form:** $y'' + p(x)y' + q(x)y = r(x)$
+*   **Homogenous Form:** $y'' + p(x)y' + q(x)y = 0$
+*   **General Solution:** $y = C_1 y_1 + C_2 y_2 + y_p$
+    *   where $y_1$ and $y_2$ are linearly independent solutions.
+
+---
+
+## Homogenous Solution, $y_h$
+
+If $p(x), q(x)$ are constants,
+$$y'' + ay' + by = r(x)$$
+*   **Characteristic homogenous equation:** $(D^2 + aD + b)y = 0$
+*   **Characteristic solution:** $D = \frac{-a \pm \sqrt{a^2 - 4b}}{2}$
+
+### Homogenous Solutions Summary Table
+
+| Value of $D$ | Homogenous solution |
+| :--- | :--- |
+| $D \in \mathbb{R}$ (one real root) | $y = C_1 e^{Dx}$ |
+| $D = m \pm ni$ | $y = e^{mx} (C_1 \sin nx + C_2 \cos nx)$ |
+| $D = R, R$ (repeated roots) | $y = C_1 e^{Rx} + C_2 x e^{Rx}$ |
+| $D = R, R, R$ (repeated roots) | $y = C_1 e^{Rx} + C_2 x e^{Rx} + C_3 x^2 e^{Rx}$ |
+
+---
+
+## Particular Solution, $y_p$
+### Method of Undetermined Coefficients
+
+| $R(x)$ | $y_p$ Form |
+| :--- | :--- |
+| $k$ (constant) | $y_p = A$ |
+| Polynomial, $P(x)$ | $y_p = Ax^n + Bx^{n-1} + \dots + k$ |
+| $P(x) \sin(mx)$ | $y_p = (Ax^n + Bx^{n-1} + \dots + k) \sin mx + (A'x^n + B'x^{n-1} + \dots + k') \cos mx$ |
+| $e^{mx} P(x)$ | $y_p = e^{mx} (Ax^n + Bx^{n-1} + \dots + k)$ |
+
+---
+
+## RLC Circuit Analysis
+Given an RLC circuit:
+$$LI'' + RI' + \frac{1}{C}I = \frac{d}{dt}(V_m \sin(2\pi ft))$$
+
+**CMPLX Method:**
+$$I_m = \frac{(2\pi f \times V_m)i}{LX^2 + RX + 1/C}$$
+**CALC X?** where $X = (2\pi f)i$
+
+$$I_{rms} = \frac{|I_m|}{\sqrt{2}} \times 1000 \text{ in mA}$$

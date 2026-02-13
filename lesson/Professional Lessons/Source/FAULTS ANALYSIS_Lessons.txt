@@ -1,0 +1,74 @@
+# FAULTS ANALYSIS
+
+## ELECTRICAL FAULTS
+**Faults** - a short-circuit condition.
+- A heavy current (called **short circuit current**) flows through the equipment, causing considerable **damage to the equipment** and **interruption of service** to the consumers.
+
+## Symmetrical Faults
+- Equal fault currents in the lines with 120 degree displacement.
+
+### PER UNIT Reactance
+`%X = (kVA * X) / (10 * (kV)^2)`
+
+### Short Circuit Current
+`I_sc = I * (100 / %X)`
+
+---
+
+## BASE kVA and S-C kVA
+Usually equal to the total plant capacity or any arbitrary value.
+
+### Base %X
+`%X_base = %X_rated * (kVA_base / kVA_rated) * (kV_rated / kV_b)^2`
+
+### Short Circuit kVA
+`kVA_sc = kVA_base * (100 / %Z)`
+
+### Types of Reactors
+*   generator reactor
+*   Feeder reactor
+*   Ring reactor
+
+---
+
+## Asymmetrical Faults
+> an asymmetrical system can be expressed as SET of 3 balanced 3-vector systems-phase sequence.
+> - Dr. C. L. Fortescue
+
+*   **L-G Fault** (Line-to-Ground)
+*   **L-L Fault** (Line-to-Line)
+*   **L-L-G Fault** (Line-to-Line-to-Ground)
+
+An unbalanced system of currents (Real system) can be broken down into:
+*   **Positive sequence**
+*   **Negative sequence**
+*   **Zero sequence**
+
+---
+
+## Phase Sequences and Operator “a”
+
+**Component Currents from Phase Currents:**
+*   `I_R0 = 1/3 * (I_R + I_Y + I_B)`
+*   `I_R1 = 1/3 * (I_R + a*I_Y + a^2*I_B)`
+*   `I_R2 = 1/3 * (I_R + a^2*I_Y + a*I_B)`
+
+**Phase Currents from Component Currents:**
+*   `I_R = I_R0 + I_R1 + I_R2`
+*   `I_Y = I_R0 + a^2*I_R1 + a*I_R2`
+*   `I_B = I_R0 + a*I_R1 + a^2*I_R2`
+
+---
+
+## Asymmetrical Fault Types
+
+### Type 1: Line to Ground
+`I_R = (3 * E_R) / (Z_1 + Z_2 + Z_0 + 3*Z_n)`
+> If Z are in p.u. basis, set E_R = 1
+
+### Type 2: Line to Line
+*   `I_R = 0`
+*   `I_Y = -I_B = (-j * sqrt(3) * E_R) / (Z_1 + Z_2)`
+
+### Type 3: Double Line-to-Ground
+`I_F = - (3 * Z_2 * E_R) / (Z_1*Z_0 + Z_1*Z_2 + Z_0*Z_2)`

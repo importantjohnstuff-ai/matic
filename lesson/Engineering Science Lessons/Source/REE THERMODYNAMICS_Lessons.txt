@@ -1,0 +1,107 @@
+# THERMODYNAMICS
+
+Thermodynamics is a science which deals with the storage, the transformation, and the transfer of energy.
+
+## System Definitions
+*   **Universe**: The totality of the system and its surroundings.
+*   **System**: The specific portion of the universe being studied.
+*   **System Boundary**: The interface between the system and the surroundings.
+*   **Surrounding**: Everything outside the system boundary.
+
+### Types of Systems
+*   **Open System**: Mass and energy can cross the boundary.
+*   **Closed System**: Only energy can cross the boundary; mass is contained.
+*   **Isolated System**: Neither mass nor energy can cross the boundary.
+
+---
+
+## Ideal Gas Equation & Constants
+
+$$PV = \frac{mRT}{M}$$
+$$\rho = \frac{PM}{RT}$$
+$$m = \frac{PMV}{RT}$$
+
+### Values for Universal Gas Constant (R)
+*   $R = 8.314 \frac{kJ}{kmol \cdot K}$
+*   $R = 0.08206 \frac{Li \cdot atm}{mol \cdot K}$
+*   $R = 1.98 \frac{kcal}{kmol \cdot K}$
+*   $R = 1545 \frac{ft \cdot lbf}{lbmol \cdot R}$
+*   $R = 10.73 \frac{ft^3 \cdot psia}{lbmol \cdot R}$
+*   $R = 1.98 \frac{BTU}{lbmol \cdot R}$
+
+---
+
+## First Law of Thermodynamics
+
+*   **Work**: $W = \int_{V_1}^{V_2} P dV$
+*   **Heat (Q)**:
+    *   Constant P: $Q = n C_p (T_2 - T_1)$
+    *   Constant V: $Q = n C_v (T_2 - T_1)$
+*   **First Law Equation**: $\Delta U = Q - W$
+
+---
+
+## Summary: Non-Flow Processes
+
+| PROCESS | Work, W | Heat, Q | Internal Energy, $\Delta U$ | Enthalpy, $\Delta H$ | Entropy, $\Delta S$ |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Isothermal** | $mRT \ln(\frac{V_2}{V_1}) = P_1V_1 \ln(\frac{V_2}{V_1})$ | $= W$ | $= 0$ | $= 0$ | $mR \ln(\frac{V_2}{V_1}) = -mR \ln(\frac{P_2}{P_1})$ |
+| **Isochoric** | $= 0$ | $= m C_v \Delta T$ | $= m C_v \Delta T$ | $= m C_p \Delta T$ | $m C_v \ln(\frac{T_2}{T_1})$ |
+| **Isobaric** | $P \Delta V$ | $= m C_p \Delta T$ | $= m C_v \Delta T$ | $= m C_p \Delta T$ | $m C_p \ln(\frac{T_2}{T_1})$ |
+| **Adiabatic** | $= -m C_v \Delta T$ | $= 0$ | $= m C_v \Delta T$ | $V \Delta P$ | $= 0$ |
+
+---
+
+## Adiabatic Processes
+
+| POLYTROPIC | ADIABATIC |
+| :--- | :--- |
+| $P_1V_1^n = P_2V_2^n$ | $P_1V_1^k = P_2V_2^k$ |
+| $T_1V_1^{n-1} = T_2V_2^{n-1}$ | $T_1V_1^{k-1} = T_2V_2^{k-1}$ |
+| $\frac{T_2}{T_1} = \left(\frac{P_2}{P_1}\right)^{\frac{n-1}{n}}$ | $\frac{T_2}{T_1} = \left(\frac{P_2}{P_1}\right)^{\frac{k-1}{k}}$ |
+
+*   **Mayer relation**: $C_p - C_v = R$
+*   **For air**:
+    *   $C_p = 1 \frac{kJ}{kg \cdot K} = 0.24 \frac{btu}{lb \cdot R}$
+    *   $C_v = 0.714 \frac{kJ}{kg \cdot K} = 0.1714 \frac{btu}{lb \cdot R}$
+
+---
+
+## Entropy, S
+
+Entropy is a measure of disorder in a system. Entropy increases as the number of possible atomic/molecular orientations in space increases.
+
+*   **For a process**: $\Delta S = \int \frac{\delta Q}{T}$ or $Q = T dS$
+*   **First Law (Entropy form)**: $\Delta U = T dS - P dV$
+
+### Entropy of Sensible Heat Processes
+*   **For Gases**:
+    *   $\Delta S = n C_v \ln(\frac{T_2}{T_1}) + nR \ln(\frac{V_2}{V_1})$
+    *   $\Delta S = n C_p \ln(\frac{T_2}{T_1}) - nR \ln(\frac{P_2}{P_1})$
+*   **For Liquids/Solids**:
+    *   $\Delta S = m C_p \ln(\frac{T_2}{T_1})$
+
+---
+
+## Second Law of Thermodynamics
+
+*   **Clausius statement**: "It is impossible to construct a device which operates in a cycle and whose sole effect is the transfer of heat from a cooler body to a hotter body."
+*   **Kelvin-Planck Statement**: "It is impossible to construct a device which operates in a cycle and produces no other effect than the production of work and the transfer of heat from a single body."
+
+---
+
+## Carnot Cycle
+
+The Carnot Engine is an ideal engine that uses reversible processes to form its cycle of operation.
+
+1.  **1 $\rightarrow$ 2**: Adiabatic compression
+2.  **2 $\rightarrow$ 3**: Isothermal expansion
+3.  **3 $\rightarrow$ 4**: Adiabatic expansion
+4.  **4 $\rightarrow$ 1**: Isothermal compression
+
+### Carnot Equations
+*   $Q_H = W + Q_C$
+*   Efficiency ($\eta$): $\eta = \frac{W}{Q_H} = \frac{Q_H - Q_C}{Q_H} = \frac{T_H - T_C}{T_H}$
+*   **Ideal Refrigerator COP**: $COP = \frac{Q_C}{W} = \frac{Q_C}{Q_H - Q_C} = \frac{T_C}{T_H - T_C}$
+*   **Ideal Heat Pump COP**: $COP = \frac{Q_H}{W} = \frac{Q_H}{Q_H - Q_C} = \frac{T_H}{T_H - T_C}$
+*   **Note**: Temperature ($T$) must be absolute (K or R).

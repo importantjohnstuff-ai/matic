@@ -1,0 +1,62 @@
+# ALTERNATORS
+
+- As the reverse of the DC generator, the **armature winding is stationary** while the **field winding is rotating (rotor)**.
+
+## ROTOR WINDING
+- The number of poles ranges from 10–20 in order to reduce the required speed/EMF induced.
+- Excitation usually occurs at 250 or 125 V DC.
+
+## STATOR WINDING
+- Consists of full pitched and short pitched coils.
+- Key concepts include Pole pitch, Slot pitch, and Phase spread.
+
+---
+
+## EMF per Phase of an Alternator (AC Generator)
+An alternator is a power machine that converts mechanical energy to AC.
+
+### Fundamental Equation
+$$E = 2.22 k_f k_c k_d Z \Phi f$$
+*(Note: Where B·A is often represented as flux $\Phi$)*
+
+- **Z**: No. of conductors per phase ($Z = 2 \times \text{turns}$)
+- **Coil span factor ($k_c$):**
+  $$k_c = \cos\left(\frac{\alpha}{2}\right)$$
+  - Chording $\angle$: $\alpha = 180^\circ \times \left(\frac{\text{slots shorted/pole}}{\text{slots/pole}}\right)$
+- **Distribution factor ($k_d$):**
+  $$k_d = \frac{\sin(m\beta/2)}{m\sin(\beta/2)}$$
+  - Pitch $\angle$: $\beta = \frac{180^\circ}{\text{slots/pole}}$
+  - Phase spread: $m = \text{slots/phase/pole}$
+
+---
+
+## Equivalent Circuit for Alternators
+$$E_p \angle \pm \delta = V_p \angle 0^\circ + (I_p \angle \mp \theta)(R_a \pm j X_s)$$
+
+- **$\delta$**: Angle between $E_p$ and $V_p$
+- **$E_p$**: EMF generated per phase
+- **$V_p$**: Voltage loading per phase
+- **$I_p$**: Armature current per phase
+- **$R_a$**: Armature winding resistance
+- **$X_s$**: Synchronous reactance
+- **$\theta$**: Angle between $E_p$ and $I_p$
+  - $+\theta$: Leading
+  - $-\theta$: Lagging
+
+---
+
+## Performance Formulas
+
+### Voltage Regulation
+$$\%VR = \frac{E_p - V_p}{V_p} \times 100$$
+
+### Power Calculations
+- **Power Developed ($P_m$):**
+  $$P_m = \frac{E_p V_p}{X_s} \sin \delta = \frac{2\pi T N_s}{60}$$
+- **Power Loss ($P_{\text{loss}}$):**
+  $$P_{\text{loss}} = P_{Cu} + P_{f/w} + P_i$$
+- **Power Output ($P_{\text{out}}$):**
+  $$P_{\text{out}} = 3 V_L I_L pf$$
+- **Copper Loss ($P_{Cu}$):**
+  $$P_{Cu} = 3 I_p^2 R_a x^2$$
+  *(Where $x$ is the fraction of loading. Remove the multiplier 3 and $\sqrt{3}$ for single-phase alternators!)*

@@ -1,0 +1,59 @@
+# ILLUMINATION
+
+## Laws of Illumination
+
+1. The Illumination is directly proportional to the luminous intensity of the light source.
+2. The Illumination varies inversely as the square of the distance from the source of light.
+3. The illumination varies directly as the cosine of the angle between the normal to the surface and the direction of the incident light (**Lambert’s Law**).
+
+### Formulas
+* $E_p = \frac{I}{d^2} \cos\theta$
+* $I = \frac{\Phi}{4\pi} \text{ (Candela)}$
+* $E_p = \text{Lux}$
+
+---
+
+## UNITING (Units)
+
+| Illumination | Candle Power | Distance |
+| :--- | :--- | :--- |
+| ft-Cd | Candela (Cd) | ft |
+| lux | Cd | m |
+| phot | Cd | cm |
+
+---
+
+## METHOD OF COMPUTATION: POINT BY POINT
+
+### Formulas
+* $E_P = \frac{I}{d^2} \cos \theta$
+* $E_P = \frac{Iz}{(x^2 + y^2 + z^2)^{3/2}}$
+
+### Maximum Illumination:
+$h = \frac{\sqrt{2}}{2}s$
+
+---
+
+## Mean CANDLE POWER
+
+* **Mean horizontal candle power (MHCP):** MHCP is defined as the mean of the candle power of source in all directions in **horizontal plane**.
+* **Mean spherical candle power (MSCP):** MSCP is defined as the mean of the candle power of source in **all planes**.
+* **Mean hemispherical candle power (MHSCP):** MHSCP is defined as the mean of the candle power of source in all directions above or **below the horizontal plane**.
+
+### Formulas
+* $MSCP = \frac{\text{lumens}}{4\pi}$
+* **Reduction Factor (RF):** $RF = \frac{MSCP}{MHCP}$
+* **Utilization Factor (UF):** $UF = \frac{\text{lumens in working plane}}{\text{lumens from source}}$
+
+---
+
+## Illumination Factors and Number of Lamps
+
+### Utilization Factor
+$UF = \frac{\text{lumens in working plane}}{\text{lumens from source}}$
+
+### Maintenance Factor
+$MF = \frac{\text{Illum. at normal working condition}}{\text{Illum. at clean condition}} = \frac{1}{\text{DepreciationFactor}}$
+
+### Number of Lamps
+$N = \frac{E \times A \times WF}{\phi \times UF \times MF} \rightarrow \phi_T = \phi \times UF \times MF$

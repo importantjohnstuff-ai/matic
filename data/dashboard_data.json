@@ -1,0 +1,74 @@
+{
+  "stats": {
+    "totalNotes": 30,
+    "completionRate": "85%",
+    "streak": 12
+  },
+  "recentNotes": [
+    {
+      "title": "Power Factor Correction",
+      "category": "Professional",
+      "date": "Feb 13, 2026",
+      "timestamp": 1770991131687.2144,
+      "snippet": "Click to view content...",
+      "path": "lesson/Professional Lessons/Power Factor Correction.md"
+    },
+    {
+      "title": "Illumination",
+      "category": "Professional",
+      "date": "Feb 13, 2026",
+      "timestamp": 1770991129667.4548,
+      "snippet": "Click to view content...",
+      "path": "lesson/Professional Lessons/Illumination.md"
+    },
+    {
+      "title": "Fault Analysis",
+      "category": "Professional",
+      "date": "Feb 13, 2026",
+      "timestamp": 1770991121709.24,
+      "snippet": "Click to view content...",
+      "path": "lesson/Professional Lessons/Fault Analysis.md"
+    },
+    {
+      "title": "Powerplants",
+      "category": "Professional",
+      "date": "Feb 13, 2026",
+      "timestamp": 1770991116312.8525,
+      "snippet": "Click to view content...",
+      "path": "lesson/Professional Lessons/Powerplants.md"
+    },
+    {
+      "title": "Transmission Lines",
+      "category": "Professional",
+      "date": "Feb 13, 2026",
+      "timestamp": 1770991109588.3062,
+      "snippet": "Click to view content...",
+      "path": "lesson/Professional Lessons/Transmission Lines.md"
+    },
+    {
+      "title": "Electromagnetism",
+      "category": "Professional",
+      "date": "Feb 13, 2026",
+      "timestamp": 1770991056567.3308,
+      "snippet": "Click to view content...",
+      "path": "lesson/Professional Lessons/Electromagnetism.md"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Math",
+      "count": 12,
+      "icon": "calculator"
+    },
+    {
+      "name": "Engineering Sciences",
+      "count": 7,
+      "icon": "flask-conical"
+    },
+    {
+      "name": "Professional Electrical",
+      "count": 11,
+      "icon": "zap"
+    }
+  ]
+}

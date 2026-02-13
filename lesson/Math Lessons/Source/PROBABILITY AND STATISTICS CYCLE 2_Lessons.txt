@@ -1,0 +1,77 @@
+# PROBABILITY & STATISTICS
+
+## COMBINATORICS
+
+*   **Combination:** $N = nCr = \frac{n!}{r!(n-r)!} \rightarrow nCr$
+*   **Permutation:** $N = nPr = \frac{n!}{(n-r)!}$
+*   **Circular Permutation:**
+    *   Flip: $N = (n-1)! / 2$
+    *   Non-flip: $N = (n-1)!$
+*   **Alternation:** $N = g! \times (a!)^g$ (This formula seems unusual/specific; usually, alternation depends on the total arrangement of two groups.)
+*   **Proximity:** $N = (n+1)(n! \times p!)$ (This formula also seems unusual/specific.)
+
+---
+
+## Standard Poker Playing Cards
+*   A standard deck has 52 cards.
+*   **Suits:** Clubs (♣), Diamonds (♦), Hearts (♥), Spades (♠)
+*   **Ranks:** Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King
+*   Each suit has 13 cards.
+*   **Face cards:** Jack, Queen, King (3 per suit, 12 total)
+
+---
+
+## LAWS OF PROBABILITY
+
+*   **General Addition Rule:** $P(A \cup B) = P(A) + P(B) – P(A \cap B)$
+*   **Mutually Exclusive Events:** $P(A \cap B) = 0$
+*   **Binomial Distribution (n < 20):** $P(X=x) = nC_x \times p^x \times (1-p)^{n-x}$
+*   **Poisson Distribution (n > 20):** $P(X=x) = \frac{e^{-np} (np)^x}{x!}$
+*   **Bayesian Probability (Bayes' Theorem):** $P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}$
+
+---
+
+## Probability Distributions
+
+| Distribution | Formula                               | Mean ($\mu$)      | Variance ($\sigma^2$) | Graph |
+| :----------- | :------------------------------------ | :---------------- | :-------------------- | :---- |
+| Binomial     | $P(X=k) = \binom{n}{k} p^k (1-p)^{n-k}$ | $\mu = np$        | $\sigma^2 = np(1-p)$  |       |
+| Poisson      | $P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!}$ | $\mu = \lambda$   | $\sigma^2 = \lambda$  |       |
+| Geometric    | $P(X=k) = (1-p)^{k-1} p$              | $\mu = 1/p$       | $\sigma^2 = \frac{1-p}{p^2}$ |       |
+| Normal       | $f(x) = \frac{1}{\sqrt{2\pi}\sigma} e^{-(x-\mu)^2 / (2\sigma^2)}$ | $\mu = \mu$       | $\sigma^2 = \sigma^2$ |       |
+
+---
+
+## Central Tendency
+
+*   **Arithmetic mean ($\bar{x}$):** $\bar{x} = \frac{\sum x}{n} = \frac{\sum fx}{\sum f}$
+*   **Root mean square (RMS):** $\sqrt{(\sum x^2 / n)}$
+*   **Geometric mean:** $(x_1 x_2 \dots x_n)^{1/n}$
+*   **Harmonic mean:** $n \div \sum (1/x)$
+
+---
+
+## KURTOSIS and SKEWNESS
+
+### KURTOSIS
+*   **Leptokurtic:** High peak, heavy tails.
+*   **Mesokurtic:** Normal distribution (e.g., bell curve).
+*   **Platykurtic:** Flat peak, light tails.
+
+### SKEWNESS
+*   **Positive Skew:** Mean > Median (tail to the right).
+*   **Symmetrical Distribution:** Mean = Median = Mode.
+*   **Negative Skew:** Mean < Median (tail to the left).
+
+---
+
+## NORMAL DISTRIBUTION (Gaussian Distribution)
+A bell-shaped curve used to model real-world processes and phenomena.
+
+### Normal Distribution Case 1: (Given x, s, and $\bar{x}$)
+*   For $<x: P((x-\bar{x})/s)$
+*   For $>x: R((x-\bar{x})/s)$
+
+### Normal Distribution Case 2: (Given table data)
+*   For $<x: P(x>t)$ (This notation implies using a z-table for probabilities, where 't' might be a z-score)
+*   For $>x: R(x>t)$ (This notation implies using a z-table for probabilities)

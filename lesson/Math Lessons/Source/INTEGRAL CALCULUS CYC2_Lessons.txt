@@ -1,0 +1,136 @@
+# INTEGRAL CALCULUS
+
+## Integrations Techniques
+
+*   $\int u^n du = \frac{u^{n+1}}{n+1} + C \quad (n \neq -1)$
+*   $\int \frac{1}{u} du = \ln|u| + C \quad (n = -1)$
+*   $\int u dv = uv - \int v du$
+
+## Exponential and Logarithmic Integrals
+
+*   $\int e^u du = e^u + C$
+*   $\int a^u du = \frac{a^u}{\ln a} + C$
+*   $\int (\ln u) du = u(\ln u - 1) + C$
+*   $\int (\log_a u) du = \frac{1}{\ln a} u(\ln u - 1) + C$
+
+## Trigonometric Functions Integrals
+
+*   $\int \sin u du = -\cos u + C$
+*   $\int \cos u du = \sin u + C$
+*   $\int \tan u du = \ln |\sec u| + C$
+*   $\int \cot u du = \ln |\sin u| + C$
+*   $\int \sec u du = \ln |\sec u + \tan u| + C$
+*   $\int \csc u du = \ln |\csc u - \cot u| + C$
+*   $\int \sec^2 u du = \tan u + C$
+*   $\int \csc^2 u du = -\cot u + C$
+*   $\int \tan u \sec u du = \sec u + C$
+*   $\int \cot u \csc u du = -\csc u + C$
+
+## Hyperbolic Functions Integrals
+
+*   $\int \sinh u du = \cosh u + C$
+*   $\int \cosh u du = \sinh u + C$
+*   $\int \text{sech } u \tanh u du = -\text{sech } u + C$
+*   $\int \text{csch } u \coth u du = -\text{csch } u + C$
+*   $\int \text{sech}^2 u du = \tanh u + C$
+*   $\int \text{csch}^2 u du = -\coth u + C$
+*   $\int \tanh u du = \ln |\cosh u| + C$
+*   $\int \coth u du = \ln |\sinh u| + C$
+
+---
+
+## Area Integrals
+
+*   **For area between two curves $y_1(x)$ and $y_2(x)$:**
+    $$A = \int_{x_1}^{x_2} |y_2 - y_1| dx$$
+*   **For area between two curves $x_1(y)$ and $x_2(y)$:**
+    $$A = \int_{y_1}^{y_2} |x_2 - x_1| dy$$
+*   **For area in polar coordinates:**
+    $$A = \frac{1}{2} \int_{\theta_1}^{\theta_2} |r|^2 d\theta$$
+
+---
+
+## Curves in Polar Coordinates (Examples)
+
+*   **Circle:** $r = a \sin \theta$ or $r = a \cos \theta$
+*   **Cardioid:** $r = a \pm b \cos \theta$ or $r = a \pm b \sin \theta$ (with $a > 0, b > 0, a/b = 1$)
+*   **One-Loop Limaçon:** $r = a \pm b \cos \theta$ or $r = a \pm b \sin \theta$ (with $a > 0, b > 0, 1 < a/b < 2$)
+*   **Inner-Loop Limaçon:** $r = a \pm b \cos \theta$ or $r = a \pm b \sin \theta$ (with $a > 0, b > 0, a < b$)
+*   **Lemniscate:** $r^2 = a^2 \cos(2\theta)$ or $r^2 = a^2 \sin(2\theta)$ ($a \neq 0$)
+*   **Rose Curve (n even):** $r = a \cos(n\theta)$ or $r = a \sin(n\theta)$ (2n petals)
+*   **Rose Curve (n odd):** $r = a \cos(n\theta)$ or $r = a \sin(n\theta)$ (n petals)
+*   **Archimedes' Spiral:** $r = \theta$ ($r \ge 0$)
+
+---
+
+## CENTROIDS
+
+### Vertical Strip (VS) Method:
+$$ \bar{x} = \frac{\int_{x_1}^{x_2} x |y_2 - y_1| dx}{A} $$
+$$ \bar{y} = \frac{\int_{x_1}^{x_2} \frac{y_2 + y_1}{2} |y_2 - y_1| dx}{A} $$
+
+### Horizontal Strip (HS) Method:
+$$ \bar{x} = \frac{\int_{y_1}^{y_2} \frac{x_2 + x_1}{2} |x_2 - x_1| dy}{A} $$
+$$ \bar{y} = \frac{\int_{y_1}^{y_2} y |x_2 - x_1| dy}{A} $$
+
+Where:
+*   $\bar{x}$: x-coordinate of the centroid
+*   $\bar{y}$: y-coordinate of the centroid
+*   $A$: Area of the region
+*   $x_1, x_2$: Functions of y defining the horizontal boundaries of the strip
+*   $y_1, y_2$: Functions of x defining the vertical boundaries of the strip
+
+---
+
+## ARCLENGTH
+
+*   **For $y = f(x)$:**
+    $$L = \int_{x_1}^{x_2} \sqrt{1 + (y')^2} dx$$
+*   **For $x = f(y)$:**
+    $$L = \int_{y_1}^{y_2} \sqrt{1 + (x')^2} dy$$
+
+---
+
+## VOLUME INTEGRALS
+
+### Case 1 (Disk/Washer Method - perpendicular to AOR):
+*   **Revolving around x-axis (or horizontal line $y=AOR$):**
+    $$V = 2\pi \int_{x_1}^{x_2} |x - AOR| \times |y_2 - y_1| dx$$
+*   **Revolving around y-axis (or vertical line $x=AOR$):**
+    $$V = 2\pi \int_{y_1}^{y_2} |y - AOR| \times |x_2 - x_1| dy$$
+
+### Case 2 (Shell Method - parallel to AOR):
+*   **Revolving around x-axis (or horizontal line $y=AOR$):**
+    $$V = 2\pi \int_{x_1}^{x_2} \left| \frac{y_1 + y_2}{2} - AOR \right| \times |y_2 - y_1| dx$$
+*   **Revolving around y-axis (or vertical line $x=AOR$):**
+    $$V = 2\pi \int_{y_1}^{y_2} \left| \frac{x_1 + x_2}{2} - AOR \right| \times |x_2 - x_1| dy$$
+
+---
+
+## MOMENT OF AREA (First Moment of Area)
+
+### Case 1: If axis is parallel to strip:
+*   $MOA_X = \int_{x_1}^{x_2} |x| \times |y_2 - y_1| dx$
+*   $MOA_Y = \int_{y_1}^{y_2} |y| \times |x_2 - x_1| dy$
+
+### Case 2: If axis is perpendicular to strip:
+*   $MOA_X = \int_{x_1}^{x_2} \left| \frac{y_2 + y_1}{2} \right| \times |y_2 - y_1| dx$
+*   $MOA_Y = \int_{y_1}^{y_2} \left| \frac{x_2 + x_1}{2} \right| \times |x_2 - x_1| dy$
+
+---
+
+## MOMENT OF INERTIA (Second Moment of Area)
+
+### WRT Horizontal Axis:
+$$MOI_X = \frac{1}{3} \int_{x_1}^{x_2} |y_2^3 - y_1^3| dx$$
+
+### WRT Vertical Axis:
+$$MOI_Y = \frac{1}{3} \int_{y_1}^{y_2} |x_2^3 - x_1^3| dy$$
+
+---
+
+## WORK (Calculus Application)
+
+*   $W = F \times s$
+*   $W = \int_a^b F(s) ds$
+*   Work $= \int_{x_1}^{x_2} F(x) dx$
