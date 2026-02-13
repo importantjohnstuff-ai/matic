@@ -1,0 +1,52 @@
+# ELECTRICAL TRANSIENTS
+
+## TRANSIENT DC CIRCUITS
+
+| Circuit | Current | Voltage Drop |
+| :--- | :--- | :--- |
+| **RL** | $I = \frac{E}{R} \left( 1 - e^{-\frac{R}{L}t} \right)$ | $E_R = E \left( 1 - e^{-Rt/L} \right)$ <br> $E_L = E e^{-Rt/L}$ |
+| **RC** | $I = \frac{E \pm \frac{Q_0}{C}}{R} e^{-t/RC}$ <br> (+): discharging <br> (-): charging | $E_R = E e^{-t/RC}$ <br> $E_C = E \left( 1 - e^{-t/RC} \right)$ |
+
+*   **Time constant of RL Circuits:** $\tau = \frac{L}{R}$
+*   **Time constant of RC Circuits:** $\tau = RC$
+
+---
+
+## TRANSIENT DC CIRCUITS - RLC
+
+**Characteristic Equation:** $D^2 + \frac{R}{L}D + \frac{1}{LC} = 0$
+
+| CASES | Discriminant | Current |
+| :--- | :--- | :--- |
+| **Overdamped** | $\left( \frac{R}{L} \right)^2 - \frac{4}{LC} > 0$ | $I = Ae^{D_1t} + Be^{D_2t}$ |
+| **Critically Damped** | $\left( \frac{R}{L} \right)^2 - \frac{4}{LC} = 0$ | $I = (A + Bt)e^{-Rt/2L}$ |
+| **Underdamped** | $\left( \frac{R}{L} \right)^2 - \frac{4}{LC} < 0$ | $I = e^{\alpha t} (A \cos \beta t + B \sin \beta t)$ |
+
+**Parameters:**
+*   $\alpha = -\frac{R}{2L}$
+*   $\beta = \frac{\sqrt{\left( \frac{R}{L} \right)^2 - \frac{4}{LC}}}{2}$
+
+---
+
+## TRANSIENT AC CIRCUITS
+
+| Circuit | Input | $\delta$ | Instantaneous Current |
+| :--- | :--- | :--- | :--- |
+| **RL** | $E = E_m \sin(\omega t + \phi)$ <br> $Z = \sqrt{R^2 + X_L^2}$ | $\delta = \tan^{-1} \left( \frac{\omega L}{R} \right)$ | $I = \frac{E_m}{Z} \sin(\omega t + \phi - \delta) - \frac{E_m}{Z} \sin(\phi - \delta) e^{-\frac{R}{L}t}$ |
+| **RC** | $E = E_m \sin(\omega t + \phi)$ <br> $Z = \sqrt{R^2 + X_C^2}$ | $\delta = \tan^{-1} \left( \frac{1}{\omega RC} \right)$ | $I = \frac{E_m}{Z} \sin(\omega t + \phi + \delta) + \left( \frac{E \sin \phi}{R} - \frac{E_m}{Z} \sin(\phi + \delta) \right) e^{-\frac{t}{RC}}$ |
+
+---
+
+## TRANSIENT AC CIRCUITS - RLC
+
+| CASES | Discriminant | Current |
+| :--- | :--- | :--- |
+| **Overdamped** | $\left( \frac{R}{L} \right)^2 - \frac{4}{LC} > 0$ | $I = Ae^{D_1t} + Be^{D_2t} + I_m \sin(\omega t + \phi + \delta)$ |
+| **Critically Damped** | $\left( \frac{R}{L} \right)^2 - \frac{4}{LC} = 0$ | $I = (A + Bt)e^{-Rt/2L} + I_m \sin(\omega t + \phi + \delta)$ |
+| **Underdamped** | $\left( \frac{R}{L} \right)^2 - \frac{4}{LC} < 0$ | $I = e^{\alpha t} (A \cos \beta t + B \sin \beta t) + I_m \sin(\omega t + \phi + \delta)$ |
+
+**Parameters:**
+*   $\alpha = -\frac{R}{2L}$
+*   $\beta = \frac{\sqrt{\frac{4}{LC} - \left( \frac{R}{L} \right)^2}}{2}$
+*   $Z = \sqrt{R^2 + (X_L - X_C)^2}$
+*   $\delta = \tan^{-1} \left( \frac{|X_L - X_C|}{R} \right)$

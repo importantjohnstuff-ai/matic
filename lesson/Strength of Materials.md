@@ -1,0 +1,107 @@
+# STRENGTH OF MATERIALS
+
+## Properties of Steel
+*   **Modulus of Elasticity (E):** $200 \text{ GPa} = 30 \times 10^6 \text{ psi}$
+*   **Shear Modulus (G):** $80 \text{ GPa} = 12 \times 10^6 \text{ psi}$
+*   **Poisson's Ratio ($\nu$):** $\nu \approx 0.29$
+
+## Common Conversions
+*   $10 \text{ mm} = 1 \text{ cm}$
+*   $1 \text{ in} = 25.4 \text{ mm}$
+*   $1 \text{ kPa} = 10^3 \text{ Pa}$
+*   $1 \text{ MPa} = 10^3 \text{ kPa}$
+*   $1 \text{ GPa} = 10^3 \text{ MPa} = 10^6 \text{ kPa}$
+
+---
+
+## Inertia Formulas
+
+| Shape | Moment of Inertia |
+| :--- | :--- |
+| **Rectangle** | $I_x = \frac{bh^3}{12}$ |
+| **Triangle** | $I_x = \frac{bh^3}{36}$ |
+| **Circle** | $I = \frac{\pi r^4}{4}$ OR $\frac{\pi D^4}{64}$ |
+
+### Mass Moments of Inertia
+*   **Solid cylinder or disc, symmetry axis:** $I = \frac{1}{2}MR^2$
+*   **Hoop about symmetry axis:** $I = MR^2$
+*   **Solid sphere:** $I = \frac{2}{5}MR^2$
+*   **Rod about center:** $I = \frac{1}{12}ML^2$
+
+### Transfer Theorem (Parallel Axis Theorem)
+$$I = I_x + A \times d^2$$
+
+---
+
+## Stress and Strain
+
+### Normal Stress ($\sigma$): Compression and Tension
+$$\sigma = \frac{F}{A_\perp}$$
+
+*   **Strain ($\epsilon$):** $\epsilon = \frac{Y}{L}$
+*   **Modulus of Elasticity (E):** $E = \frac{\sigma}{\epsilon} = \frac{F/A}{Y/L} = \frac{FL}{AY}$
+
+### Shear Stress ($\tau$)
+*   **Single shear Rivet:** $S_s = \frac{F}{\pi D^2 / 4}$
+*   **Double shear Rivet:** $S_s = \frac{F}{2 \pi D^2 / 4}$
+*   **Circular hole:** $S_s = \frac{F}{\pi D t}$
+*   **Square hole:** $S_s = \frac{F}{4 s t}$
+
+### Poisson's Ratio ($\nu$)
+*   **Shear Modulus (G):** $G = \frac{E}{2(1 + \nu)}$
+*   **Bulk Modulus (B):** $B = \frac{E}{3(1 - 2\nu)}$
+
+---
+
+## Thermal Stress
+Increase/decrease in the length of a material when exposed to heat.
+
+*   **Deformation ($Y_T$):** $Y_T = \alpha L_0 \Delta T$
+*   **Thermal Stress ($\sigma_T$):** $\sigma_T = \alpha E \Delta T$
+*   **Maximum Stress ($\sigma_{max}$):** $\sigma_{max} = \frac{F_0}{A_c} + \alpha E \Delta T$
+
+**Thermal Expansion Coefficients ($\alpha_{steel}$):**
+*   $11.7 \times 10^{-6} / ^\circ\text{C}$
+*   $6.5 \times 10^{-6} / ^\circ\text{F}$
+
+---
+
+## Beams
+
+### Common Beam Cases
+
+| Case | $V_{max}$ | $M_{max}$ |
+| :--- | :--- | :--- |
+| **Cantilever, end load P** | $P$ | $PL$ |
+| **Cantilever, mid load P** | $P$ | $PL/2$ |
+| **Cantilever, uniform load w** | $wL$ | $wL^2/2$ |
+| **Simple support, mid load P** | $P/2$ | $PL/4$ |
+| **Simple support, load P at a, b** | $P \times \max(a,b)/L$ | $Pab/L$ |
+| **Simple support, uniform load w** | $wL/4$ | $wL^2/8$ |
+
+### Beam Stresses
+
+| Section | Bending/Flexural Stress | Shear Stress |
+| :--- | :--- | :--- |
+| **Rectangular** | $\frac{6M_{max}}{bh^2}$ | $\frac{3V_{max}}{2bh}$ |
+| **Circular** | $\frac{4M_{max}}{\pi r^3}$ | $\frac{16T}{\pi d^3}$ |
+
+---
+
+## Torsion
+*   **Twist Angle:** $\theta = \frac{TL}{JG}$
+*   **Shaft Stress:** $\tau_{max} = \frac{16T}{\pi d^3} = \frac{16Td_o}{\pi(d_o^4 - d_i^4)}$
+*   **Polar Moment of Inertia (J):** $J = \frac{\pi d^4}{32} = \frac{\pi(d_o^4 - d_i^4)}{32}$
+*   **Power-Torque Relation:** $P = \frac{2\pi TN}{60 \text{ or } 33,000}$
+
+---
+
+## Helical Springs
+*   **Hooke's Law:** $F = kx$
+*   **Stress (Wahl):** $\tau = \frac{16FR}{\pi d^3} \left( \frac{4m-1}{4m-4} + \frac{0.615}{m} \right)$
+*   **Spring Index:** $m = \frac{2R}{d} = \frac{\text{spring diam.}}{\text{wire diam.}}$
+*   **Deflection:** $x = \frac{64FR^3n}{Gd^4} = \frac{F}{k}$
+
+### Spring Systems
+*   **Series:** $1/k = 1/k_1 + 1/k_2 + \dots$
+*   **Parallel:** $k = k_1 + k_2 + \dots$

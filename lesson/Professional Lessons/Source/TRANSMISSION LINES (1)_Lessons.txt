@@ -1,0 +1,110 @@
+# TRANSMISSION LINE
+
+## INDUCTANCE OF TRANSMISSION LINES
+
+### SINGLE LINE 1-phase
+*   **Inductance:** $L(H/m/loop) = 4 \times 10^{-7} \ln \left( \frac{d}{GMR} \right)$
+*   **GMR:** $GMR = 0.7788r$
+
+### SINGLE LINE 3-phase
+*   **Inductance:** $L(H/m/phase) = 2 \times 10^{-7} \ln \left( \frac{GMD}{GMR} \right)$
+*   **GMR:** $GMR = 0.7788r$
+*   **GMD:** $GMD = \sqrt[3]{d_1 d_2 d_3}$
+
+---
+
+### DOUBLE LINE 3-phase
+*   **Inductance:** $L(H/m/phase) = 2 \times 10^{-7} \ln \left( \frac{GMD}{GMR} \right)$
+*   **sGMD (Self GMD):** $sGMD = \sqrt[3]{d_A d_B d_C}$
+*   **mGMD (Mutual GMD):** $mGMD = \sqrt[3]{d_{AB} d_{BC} d_{AC}}$
+*   **Phase Distance Calculation Examples:**
+    *   $d_A = \sqrt[4]{d_{aa} d_{a'a'} d_{aa'} d_{a'a}}$
+    *   $d_{AB} = \sqrt[4]{d_{ab} d_{ab'} d_{a'b} d_{a'b'}}$
+
+---
+
+## TRANSPOSITION OF PHASES
+Transposition involves rotating the conductor positions at regular intervals along the line to balance inductances and capacitances among phases.
+
+---
+
+## CAPACITANCES OF TRANSMISSION LINES
+
+**Capacitance Formula:**
+$$C(F/m/phase) = \frac{2\pi \epsilon_0}{\ln \left( \frac{mGMD}{r_{eq}} \right)}$$
+
+### TABLE 1: GMR Formulas for Each Bundle Conductor Configuration
+
+| Number of Conductor | Configuration | GMR Formula |
+| :--- | :--- | :--- |
+| 2 | $\bullet - d - \bullet$ | $GMR = \sqrt{r' d}$ |
+| 3 | Triangular ($\bullet, \bullet, \bullet$) | $GMR = \sqrt[3]{r' d^2}$ |
+| 4 | Square ($\bullet, \bullet, \bullet, \bullet$) | $GMR = 1.09 \sqrt[4]{r' d^3}$ |
+| 6 | Hexagonal | $GMR = 1.272 \sqrt[6]{r' d^5}$ |
+
+---
+
+## AREAS AND WIRE GAUGES
+
+*   **Diameter in inches:** $d(in) = \frac{1}{1000} \sqrt{cmils}$
+*   **Diameter from AWG:** $d(in) = 0.005 \times 92^{\frac{36-AWG}{39}}$
+*   **Strands in a layered bundle:** $s = 3n^2 - 3n + 1$
+*   **Conversion:** $1000 \text{ mils} = 1 \text{ inch}$
+
+---
+
+## ACSR—Aluminum Conductors Steel Reinforced (ASTM B 232)
+
+| Code name | Nominal AWG or MCM | Alum. $mm^2$ | Steel $mm^2$ | Total $mm^2$ | Stranding Alum/Steel | Approx. Diameter ($mm$) | Weight Total ($kg/km$) | Breaking Load ($kN$) | Nominal DC Resistance @ 20° ($Ohm/km$) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| TURKEY | 6 | 13.29 | 2.19 | 15.48 | 6/1.68 | 5.04 | 54 | 5.24 | 2.1586 |
+| SWAN | 4 | 21.16 | 3.55 | 24.71 | 6/2.12 | 6.36 | 85 | 8.32 | 1.3557 |
+| SWANATE | 4 | 21.16 | 5.35 | 26.51 | 7/1.96 | 6.53 | 100 | 10.53 | 1.3557 |
+| SPARROW | 2 | 33.61 | 5.61 | 39.22 | 6/2.67 | 8.01 | 136 | 12.7 | 0.8535 |
+| SPARATE | 2 | 33.61 | 8.52 | 42.13 | 7/2.47 | 8.24 | 159 | 16.11 | 0.8535 |
+| ROBIN | 1 | 42.39 | 7.10 | 49.49 | 6/3.00 | 9.00 | 171 | 15.85 | 0.6767 |
+| RAVEN | 1/0 | 53.48 | 8.90 | 62.38 | 6/3.37 | 10.11 | 216 | 19.32 | 0.5364 |
+| QUAIL | 2/0 | 67.42 | 11.23 | 78.65 | 6/3.78 | 11.34 | 273 | 23.62 | 0.4255 |
+| PIGEON | 3/0 | 85.03 | 14.19 | 99.22 | 6/4.25 | 12.75 | 343 | 29.41 | 0.3373 |
+| PENGUIN | 4/0 | 107.23 | 17.87 | 125.10 | 6/4.77 | 14.31 | 433 | 37.06 | 0.2675 |
+| WAXWING | 266.8 | 135.16 | 7.48 | 142.64 | 18/3.09 | 15.45 | 431 | 30.27 | 0.2133 |
+| PARTRIDGE | 266.8 | 135.16 | 22.00 | 157.16 | 26/2.57 | 16.28 | 546 | 50.29 | 0.2143 |
+| OSTRICH | 300 | 152.00 | 24.71 | 176.71 | 26/2.73 | 17.35 | 614 | 56.52 | 0.1906 |
+| MERLIN | 336.4 | 170.45 | 9.48 | 179.93 | 18/3.47 | 17.35 | 544 | 38.23 | 0.1691 |
+| LINNET | 336.4 | 170.45 | 27.81 | 198.26 | 26/2.89 | 18.31 | 689 | 62.71 | 0.1699 |
+| ORIOLE | 336.4 | 170.45 | 39.81 | 210.26 | 30/2.69 | 18.83 | 784 | 77.27 | 0.1704 |
+| CHICKADEE | 397.5 | 201.42 | 11.16 | 212.58 | 18/3.77 | 18.85 | 642 | 43.99 | 0.1431 |
+
+---
+
+## SHORT TRANSMISSION LINES
+
+### Types on the basis of length:
+*   **Small (Short):** Up to 80 km
+*   **Medium:** 80 – 240 km
+*   **Long:** > 240 km
+
+### Formulas:
+*   $V_{S,p} \angle \phi_s = V_{R,p} \angle 0 + (I \angle \mp \phi_R)(Z_L)$
+*   $V_{S,p} = V_{R,p} + I(R_L pf_R \pm X_L \sin(\cos^{-1}(pf_R)))$
+*   **Voltage Regulation:** $VR = \frac{V_S - V_R}{V_R}$
+*   **Efficiency:** $\eta = \frac{P_{out}}{P_{in}} = \frac{\sqrt{3} I V_{R,L} (pf_R)}{\sqrt{3} I V_{R,L} (pf_R) + 3 I^2 R_L}$
+
+---
+
+## MEDIUM TRANSMISSION LINES
+
+### General Equations:
+*   $V_S = AV_R + BI_R$
+*   $I_S = CV_R + DI_R$
+*   $VR = \frac{V_S/A - V_R}{V_R}$
+
+### Nominal T Model:
+*   $A = D = 1 + \frac{YZ}{2}$
+*   $B = Z \left( 1 + \frac{YZ}{4} \right)$
+*   $C = Y$
+
+### Nominal $\pi$ Model:
+*   $A = D = 1 + \frac{YZ}{2}$
+*   $B = Z$
+*   $C = Y \left( 1 + \frac{YZ}{4} \right)$
