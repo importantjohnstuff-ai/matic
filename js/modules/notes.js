@@ -205,10 +205,38 @@ export async function openTopicViewer(topic, category) {
     modal.classList.add('active');
 }
 
+// Local cache for lessons registry
+let lessonRegistry = null;
+
+async function ensureLessonRegistry() {
+    if (lessonRegistry) return;
+    try {
+        const res = await fetch('data/lessons.json');
+        if (res.ok) {
+            lessonRegistry = await res.json();
+            console.log("Lesson registry loaded:", lessonRegistry);
+        }
+    } catch (e) {
+        console.warn('Failed to load lesson registry:', e);
+        lessonRegistry = { files: {} }; // Empty fallback
+    }
+}
+
+function findFilePathInRegistry(fileName) {
+    if (!lessonRegistry || !lessonRegistry.files) return null;
+    for (const cat in lessonRegistry.files) {
+        const files = lessonRegistry.files[cat];
+        const match = files.find(f => f.name === fileName);
+        if (match) return match.path;
+    }
+    return null;
+}
+
 function getCategoryFolder(category) {
     if (category.includes('Math')) return 'Math Lessons';
+    // Check Professional first to avoid "Engineering" keyword inside "Professional Electrical Engineering" triggering the wrong folder
+    if (category.includes('Professional') || category.includes('Electrical')) return 'Professional Lessons';
     if (category.includes('Engineering') || category.includes('Science')) return 'Engineering Science Lessons';
-    if (category.includes('Electrical') || category.includes('Professional')) return 'Professional Lessons';
     return 'Math Lessons'; // Default
 }
 
@@ -222,11 +250,47 @@ async function loadLessonContent(category, fileName, container) {
     if (window.lucide) lucide.createIcons();
 
     try {
-        const folder = getCategoryFolder(category);
-        const url = `lesson/${folder}/${encodeURIComponent(fileName)}`;
-        const res = await fetch(url);
+        await ensureLessonRegistry();
 
-        if (!res.ok) throw new Error("File not found");
+        // 1. Try to find the exact path from registry
+        let url = findFilePathInRegistry(fileName);
+        let res;
+
+        if (url) {
+            console.log(`Found path in registry: ${url}`);
+            res = await fetch(url);
+        } else {
+            // 2. Fallback to folder guessing if registry lookup fails
+            const folder = getCategoryFolder(category);
+            url = `lesson/${folder}/${encodeURIComponent(fileName)}`;
+            res = await fetch(url);
+        }
+
+        if (!res.ok) {
+            // 3. Fallback: Try root lesson folder
+            console.warn(`Lesson not found at ${url}, checking root 'lesson/'...`);
+            url = `lesson/${encodeURIComponent(fileName)}`;
+            res = await fetch(url);
+        }
+
+        if (!res.ok) {
+            // 4. Fallback: Check other category folders
+            const otherFolders = ['Math Lessons', 'Engineering Science Lessons', 'Professional Lessons'];
+            const currentFolder = getCategoryFolder(category);
+
+            for (const otherFolder of otherFolders) {
+                if (otherFolder === currentFolder) continue;
+                const otherUrl = `lesson/${otherFolder}/${encodeURIComponent(fileName)}`;
+                const otherRes = await fetch(otherUrl);
+                if (otherRes.ok) {
+                    console.log(`Lesson found in ${otherFolder}`);
+                    res = otherRes;
+                    break;
+                }
+            }
+        }
+
+        if (!res || !res.ok) throw new Error("File not found");
 
         let text = await res.text();
 
